@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> summary-tab/getMetaObj.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>summary-tab/getMetaObj.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable @typescript-eslint/dot-notation */
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable complexity */
+
+import VariableDependentTime, {
+    NameFunction,
+    Sine,
+    Square,
+    StaticValue,
+    Transition,
+} from "types/VariableDependentTime";
+
+const createObjectVariableDependent = (params: VariableDependentTime) => {
+    const variableDependent = {
+        function: "events",
+        values: [],
+        days: [],
+        default: params.default,
+    };
+    params.type.forEach((p: Sine | Square | Transition | StaticValue, i) => {
+        variableDependent.days.push(params.rangeDays[i]);
+        switch (p.name) {
+            case NameFunction.sinusoidal:
+                variableDependent.values.push({
+                    function: "sine",
+                    min_val: p["min"],
+                    max_val: p["max"],
+                    period: p["period"],
+                    initphase: p["initPhase"],
+                });
+                break;
+            case NameFunction.square:
+                variableDependent.values.push({
+                    function: "square",
+                    min_val: p["min"],
+                    max_val: p["max"],
+                    period: p["period"],
+                    initphase: p["initPhase"],
+                    duty: p["duty"],
+                    t_init: params.rangeDays[i][0],
+                    t_end: params.rangeDays[i][1],
+                });
+                break;
+            default:
+                variableDependent.values.push(p["value"]);
+                break;
+        }
+    });
+    return variableDependent;
+};
+
+const initialConditionsArray = (initCondModel, param) => {
+    return initCondModel.map((initCond) => {
+        return +initCond.conditionsValues[param];
+    });
+};
+
+const getParametersArray = (parametersValue) => {
+    return parametersValue.map((param) => {
+        return !param.isEnabled
+            ? +param.val
+            : createObjectVariableDependent(param);
+        // return +initCond.conditionsValues[param];
+    });
+};
+
+/**
+ * It provides the data for the metapopulation models.
+ * @param  {NewModelsAllParams[]} model
+ * @returns {Object}
+ */
+const getMetaObj = (model, scale, featureSelected) => {
+    return {
+        // idSim: model.idNewModel,
+        model: {
+            model: "SEIRMETA",
+            id: model.idNewModel,
+            name: model.parameters.name,
+            compartments: model.parameters.compartments,
+            EDOs: true,
+            RBM: false,
+            RBM_N: 1,
+        },
+        data: {
+            datafile: false,
+            importdata: false,
+            initdate: "",
+            country: "USA",
+            state: scale === "States" ? featureSelected : "",
+            county: scale === "Counties" ? featureSelected : "",
+            healthservice: "",
+            loc_name: "",
+            geo_topology: "meta",
+        },
+        parameters: {
+            static: {
+                t_init: 0,
+                t_end: +model.parameters.t_end,
+                mu: model.parameters.mu,
+                pI_det: +model.parameters.pI_det,
+                // populationfraction: +model.parameters.populationfraction,
+                k_I: 0,
+                k_R: 0,
+            },
+            dynamic: {
+                beta: getParametersArray(model.parameters.beta),
+                alpha: getParametersArray(model.parameters.alpha),
+                Phi: false,
+                tE_I: !model.parameters.tE_I.isEnabled
+                    ? +model.parameters.tE_I.val
+                    : createObjectVariableDependent(model.parameters.tE_I),
+                tI_R: !model.parameters.tI_R.isEnabled
+                    ? +model.parameters.tI_R.val
+                    : createObjectVariableDependent(model.parameters.tI_R),
+                rR_S: !model.parameters.rR_S.isEnabled
+                    ? +model.parameters.rR_S.val
+                    : createObjectVariableDependent(model.parameters.rR_S),
+                // beta_v: !model.parameters.Beta_v[0].isEnabled
+                //     ? +model.parameters.Beta_v[0].val
+                //     : createObjectVariableDependent(model.parameters.Beta_v[0]),
+                // vac_d: !model.parameters.vac_d[0].isEnabled
+                //     ? +model.parameters.vac_d[0].val
+                //     : createObjectVariableDependent(model.parameters.vac_d[0]),
+                // vac_eff: !model.parameters.vac_eff[0].isEnabled
+                //     ? +model.parameters.vac_eff[0].val
+                //     : createObjectVariableDependent(
+                //           model.parameters.vac_eff[0]
+                //       ),
+                // pE_Im: !model.parameters.pE_Im[0].isEnabled
+                //     ? +model.parameters.pE_Im[0].val
+                //     : createObjectVariableDependent(model.parameters.pE_Im[0]),
+                // tE_Im: !model.parameters.tE_Im[0].isEnabled
+                //     ? +model.parameters.tE_Im[0].val
+                //     : createObjectVariableDependent(model.parameters.tE_Im[0]),
+                // pE_Icr: !model.parameters.pE_Icr[0].isEnabled
+                //     ? +model.parameters.pE_Icr[0].val
+                //     : createObjectVariableDependent(model.parameters.pE_Icr[0]),
+                // tE_Icr: !model.parameters.tE_Icr[0].isEnabled
+                //     ? +model.parameters.tE_Icr[0].val
+                //     : createObjectVariableDependent(model.parameters.tE_Icr[0]),
+                // tEv_Iv: !model.parameters.tEv_Iv[0].isEnabled
+                //     ? +model.parameters.tEv_Iv[0].val
+                //     : createObjectVariableDependent(model.parameters.tEv_Iv[0]),
+                // tIm_R: !model.parameters.tIm_R[0].isEnabled
+                //     ? +model.parameters.tIm_R[0].val
+                //     : createObjectVariableDependent(model.parameters.tIm_R[0]),
+                // tIcr_H: !model.parameters.tIcr_H[0].isEnabled
+                //     ? +model.parameters.tIcr_H[0].val
+                //     : createObjectVariableDependent(model.parameters.tIcr_H[0]),
+                // pIv_R: !model.parameters.pIv_R[0].isEnabled
+                //     ? +model.parameters.pIv_R[0].val
+                //     : createObjectVariableDependent(model.parameters.pIv_R[0]),
+                // tIv_R: !model.parameters.tIv_R[0].isEnabled
+                //     ? +model.parameters.tIv_R[0].val
+                //     : createObjectVariableDependent(model.parameters.tIv_R[0]),
+                // pIv_H: !model.parameters.pIv_H[0].isEnabled
+                //     ? +model.parameters.pIv_H[0].val
+                //     : createObjectVariableDependent(model.parameters.pIv_H[0]),
+                // tIv_H: !model.parameters.tIv_H[0].isEnabled
+                //     ? +model.parameters.tIv_H[0].val
+                //     : createObjectVariableDependent(model.parameters.tIv_H[0]),
+                // pH_R: !model.parameters.pH_R[0].isEnabled
+                //     ? +model.parameters.pH_R[0].val
+                //     : createObjectVariableDependent(model.parameters.pH_R[0]),
+                // tH_R: !model.parameters.tH_R[0].isEnabled
+                //     ? +model.parameters.tH_R[0].val
+                //     : createObjectVariableDependent(model.parameters.tH_R[0]),
+                // pH_D: !model.parameters.pH_D[0].isEnabled
+                //     ? +model.parameters.pH_D[0].val
+                //     : createObjectVariableDependent(model.parameters.pH_D[0]),
+                // tH_D: !model.parameters.tH_D[0].isEnabled
+                //     ? +model.parameters.tH_D[0].val
+                //     : createObjectVariableDependent(model.parameters.tH_D[0]),
+                // pR_S: !model.parameters.pR_S[0].isEnabled
+                //     ? +model.parameters.pR_S[0].val
+                //     : createObjectVariableDependent(model.parameters.pR_S[0]),
+                // tR_S: !model.parameters.tR_S[0].isEnabled
+                //     ? +model.parameters.tR_S[0].val
+                //     : createObjectVariableDependent(model.parameters.tR_S[0]),
+                // pIcr_det: +model.parameters.pIcr_det,
+                // pIm_det: +model.parameters.pIm_det,
+                // pIv_det: +model.parameters.pIv_det,
+            },
+        },
+        initialconditions: {
+            I: initialConditionsArray(model.initialConditions, "I"),
+            I_d: initialConditionsArray(model.initialConditions, "I_d"),
+            I_ac: initialConditionsArray(model.initialConditions, "I_ac"),
+            population: initialConditionsArray(
+                model.initialConditions,
+                "population"
+            ),
+            R: initialConditionsArray(model.initialConditions, "R"),
+            E: false,
+            E_d: false,
+            // Iv_d: +e.initialConditions[0].conditionsValues.Iv_d,
+            // Iv_ac: +e.initialConditions[0].conditionsValues.Iv_ac,
+            // H: +e.initialConditions[0].conditionsValues.H,
+            // H_d: +e.initialConditions[0].conditionsValues.H_d,
+            // D: +e.initialConditions[0].conditionsValues.D,
+            // D_d: +e.initialConditions[0].conditionsValues.D_d,
+            // H_cap: +e.initialConditions[0].conditionsValues.H_cap,
+            // Iv: +e.initialConditions[0].conditionsValues.Iv,
+            // Sv: +e.initialConditions[0].conditionsValues.Sv,
+        },
+    };
+};
+
+export default getMetaObj;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

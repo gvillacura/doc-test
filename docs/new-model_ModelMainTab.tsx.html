@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> new-model/ModelMainTab.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>new-model/ModelMainTab.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { DeleteIcon } from "@chakra-ui/icons";
+import {
+    Flex,
+    Spinner,
+    Accordion,
+    Icon,
+    Button,
+    useToast,
+} from "@chakra-ui/react";
+import _ from "lodash";
+import dynamic from "next/dynamic";
+import React, { useCallback, useContext, useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import ExportModels from "components/models-tab/ExportModels";
+import { ControlPanel } from "context/ControlPanelContext";
+import { GraphicsData } from "context/GraphicsContext";
+import { NewModelSetted } from "context/NewModelsContext";
+import { TabIndex } from "context/TabContext";
+import { RootState } from "store/store";
+import { InitialConditionsNewModel } from "types/ControlPanelTypes";
+import { NewModelsAllParams, NewModelsParams } from "types/SimulationTypes";
+import VariableDependentTime, {
+    NameFunction,
+} from "types/VariableDependentTime";
+
+import InitialConditionsModels from "./InitialConditionsModel";
+import ModelAccordion from "./ModelAccordion";
+import ModelBuilder from "./ModelBuilder";
+import SectionVariableDependentTime from "./SectionVariableDependentTime";
+
+interface Props {
+    id: number;
+    initialConditions: InitialConditionsNewModel[];
+    setTabIndex: (value: number) => void;
+    index: number;
+}
+
+const ModelsMap = dynamic(() => import("./ModelsMap"), {
+    loading: () => (
+        &lt;Flex justifyContent="center" alignItems="center" w="100%">
+            &lt;Spinner
+                thickness="4px"
+                speed="0.65s"
+                emptyColor="gray.200"
+                color="blue.500"
+                size="xl"
+            />
+        &lt;/Flex>
+    ),
+    ssr: false,
+});
+
+/**
+ * Component container for configuring model parameters, obtaining initial conditions, and displaying geographic selection.
+ * @subcategory NewModel
+ * @component
+ */
+// eslint-disable-next-line complexity
+const ModelMainTab = ({ id, initialConditions, setTabIndex, index }: Props) => {
+    const [modelName, setModelName] = useState("");
+    const [modelValue, setModelValue] = useState(undefined);
+    const [numberOfNodes, setNumberOfNodes] = useState(0);
+    const [dataSourceValue, setDataSourceValue] = useState(undefined);
+    const [areaSelectedValue, setAreaSelectedValue] = useState(undefined);
+    const [populationValue, setPopulationValue] = useState(undefined);
+    const [graphId, setGraphId] = useState(undefined);
+    const [isModelSavedLocal, setIsModelSavedLocal] = useState(false);
+    const [graphsSelectedValue, setGraphsSelectedValue] = useState(undefined);
+    const [showSectionInitialConditions, setShowSectionInitialConditions] =
+        useState(false);
+    const { newModel, setNewModel, completeModel, setCompleteModel } =
+        useContext(NewModelSetted);
+    const { setAux } = useContext(TabIndex);
+    const { setIdModelUpdate, dataViewVariable } = useContext(ControlPanel);
+    const [startDate, setStartDate] = useState(
+        new Date(
+            newModel.find((model: NewModelsParams) => model.idNewModel === id)
+                .t_init ?? new Date(2022, 6, 1)
+        )
+    );
+    const [showSectionVariable, setShowSectionVariable] =
+        useState&lt;boolean>(false);
+    const [positionVDT, setPositionVDT] = useState&lt;number>(-1);
+    const parameters = useSelector((state: RootState) => state.controlPanel);
+    const dispatch = useDispatch();
+    // const { parameters } = useContext(ControlPanel);
+    const {
+        setAllGraphicData,
+        setRealDataSimulationKeys,
+        setDataToShowInMap,
+        setAllResults,
+    } = useContext(GraphicsData);
+
+    /**
+     * Gets the saved value of the requested parameter.
+     */
+    const getDefaultValueParameters = useCallback(
+        (field) => {
+            return newModel.find(({ idNewModel }) => idNewModel === id)[field];
+        },
+        [newModel, id]
+    );
+
+    /**
+     * Save a new model in the context and in local storage.
+     */
+    const getModelCompleteObj = () => {
+        const modelInfo = newModel.find(
+            (model: NewModelsParams) => model.idNewModel === id
+        );
+        const allModelInfo = {
+            ...modelInfo,
+            parameters,
+        };
+        const modelExist = completeModel.find(
+            (model: NewModelsAllParams) => +model.idNewModel === id
+        );
+        if (modelExist !== undefined) {
+            setCompleteModel({
+                type: "update-all",
+                id,
+                payload: allModelInfo,
+            });
+            const modelsAux = [...completeModel].map(
+                (e: NewModelsAllParams, i) => {
+                    if (e.idNewModel === id) {
+                        return allModelInfo;
+                    }
+                    return e;
+                }
+            );
+            localStorage.setItem("newModels", JSON.stringify(modelsAux));
+        } else {
+            setCompleteModel({
+                type: "add",
+                payload: allModelInfo,
+            });
+
+            localStorage.setItem(
+                "newModels",
+                JSON.stringify([...completeModel, allModelInfo])
+            );
+        }
+    };
+    useEffect(() => {
+        setIdModelUpdate(id ?? 0);
+    }, [id, setIdModelUpdate]);
+
+    useEffect(() => {
+        try {
+            const modelSaved = completeModel.find(
+                (model: NewModelsAllParams) => {
+                    return model.idNewModel === id;
+                }
+            );
+            const savedObject = {
+                idGeo: modelSaved?.idGeo,
+                idGraph: modelSaved?.idGraph,
+                idNewModel: modelSaved?.idNewModel,
+                modelType: modelSaved?.modelType,
+                name: modelSaved?.name,
+                numberNodes: modelSaved?.numberNodes,
+                populationType: modelSaved?.populationType,
+                typeSelection: modelSaved?.typeSelection,
+            };
+
+            const actualObject = {
+                idGeo: areaSelectedValue,
+                idGraph: graphId,
+                idNewModel: id,
+                modelType: modelValue,
+                name: modelName,
+                numberNodes: numberOfNodes,
+                populationType: populationValue,
+                typeSelection: dataSourceValue,
+            };
+
+            const initialConditionsNew = newModel.find(
+                (model: NewModelsParams) => {
+                    return model.idNewModel === id;
+                }
+            );
+
+            const previusInitialConditions =
+                modelSaved.initialConditions[0].conditionsValues;
+
+            const newsInitialConditions =
+                initialConditionsNew.initialConditions[0].conditionsValues;
+
+            if (
+                _.isEqual(savedObject, actualObject) &amp;&amp;
+                _.isEqual(previusInitialConditions, newsInitialConditions)
+            ) {
+                setIsModelSavedLocal(true);
+            } else {
+                setIsModelSavedLocal(false);
+            }
+        } catch (error) {
+            setIsModelSavedLocal(false);
+        }
+    }, [
+        areaSelectedValue,
+        completeModel,
+        dataSourceValue,
+        graphId,
+        id,
+        modelName,
+        modelValue,
+        newModel,
+        numberOfNodes,
+        populationValue,
+    ]);
+
+    useEffect(() => {
+        const modelSaved = completeModel.find((model: NewModelsAllParams) => {
+            return model.idNewModel === id;
+        });
+        if (modelSaved) {
+            if (_.isEqual(modelSaved.parameters, parameters)) {
+                // setIsModelSavedLocal(true);
+                // setAllGraphicData([]);
+                // setAllResults([]);
+                // setDataToShowInMap([]);
+                // setRealDataSimulationKeys([]);
+            } else {
+                setIsModelSavedLocal(false);
+                // setAux("");
+            }
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [completeModel, id, setIsModelSavedLocal, parameters]);
+
+    /**
+     * Delete a model from local storage.
+     */
+    const deleteFromLocalStorage = () => {
+        const modelFilter = [...completeModel].filter(
+            (model: NewModelsAllParams) => model.idNewModel !== +id
+        );
+        localStorage.setItem("newModels", JSON.stringify(modelFilter));
+    };
+    const toast = useToast();
+    useEffect(() => {
+        setModelValue(getDefaultValueParameters("modelType"));
+        setDataSourceValue(getDefaultValueParameters("typeSelection"));
+        setPopulationValue(getDefaultValueParameters("populationType"));
+        setAreaSelectedValue(getDefaultValueParameters("idGeo"));
+        setNumberOfNodes(getDefaultValueParameters("numberNodes"));
+        setGraphId(getDefaultValueParameters("idGraph"));
+        if (getDefaultValueParameters("numberNodes") !== 0) {
+            setShowSectionInitialConditions(true);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [getDefaultValueParameters]);
+
+    useEffect(() => {
+        const getName = getDefaultValueParameters("name");
+        if (getName === "") {
+            const name = `Model ${index + 1}`;
+            setModelName(name);
+        } else {
+            setModelName(getName);
+        }
+        return () => {
+            setModelName("");
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [getDefaultValueParameters, index]);
+
+    return (
+        &lt;Flex ml="2%" p="0" h="100%" w="100%">
+            &lt;Flex
+                direction="column"
+                w="38%"
+                bg="#FAFAFA"
+                borderRadius="6px"
+                boxShadow="sm"
+                alignItems="center"
+            >
+                &lt;Accordion
+                    key="new-models-accordion"
+                    allowMultiple
+                    w="100%"
+                    overflowY="auto"
+                    overflowX="hidden"
+                    maxH="100%"
+                    defaultIndex={[0]}
+                >
+                    &lt;ModelAccordion
+                        modelName={modelName}
+                        setModelName={setModelName}
+                        modelValue={modelValue}
+                        setModelValue={setModelValue}
+                        populationValue={populationValue}
+                        setPopulationValue={setPopulationValue}
+                        numberOfNodes={numberOfNodes}
+                        setNumberOfNodes={setNumberOfNodes}
+                        dataSourceValue={dataSourceValue}
+                        setDataSourceValue={setDataSourceValue}
+                        areaSelectedValue={areaSelectedValue}
+                        setAreaSelectedValue={setAreaSelectedValue}
+                        graphId={graphId}
+                        setGraphId={setGraphId}
+                        id={id}
+                        showSectionInitialConditions={
+                            showSectionInitialConditions
+                        }
+                        setShowSectionInitialConditions={
+                            setShowSectionInitialConditions
+                        }
+                        graphsSelectedValue={graphsSelectedValue}
+                        setGraphsSelectedValue={setGraphsSelectedValue}
+                    />
+                    {numberOfNodes !== 0 &amp;&amp;
+                        numberOfNodes !== undefined &amp;&amp;
+                        ((dataSourceValue === "geographic" &amp;&amp;
+                            areaSelectedValue !== "" &amp;&amp;
+                            areaSelectedValue !== undefined) ||
+                            (dataSourceValue === "graph" &amp;&amp;
+                                graphId !== "" &amp;&amp;
+                                graphId !== undefined)) &amp;&amp; (
+                            &lt;ModelBuilder
+                                setShowSectionVariable={setShowSectionVariable}
+                                setPositionVDT={setPositionVDT}
+                                setShowSectionInitialConditions={
+                                    setShowSectionInitialConditions
+                                }
+                                idGeo={areaSelectedValue}
+                                modelCompartment={modelValue.toUpperCase()}
+                                numberNodes={numberOfNodes}
+                                populationValue={populationValue}
+                                dataSourceValue={dataSourceValue}
+                                modelName={modelName}
+                                startDate={startDate}
+                                id={id}
+                            />
+                        )}
+                &lt;/Accordion>
+                {numberOfNodes !== 0 &amp;&amp; numberOfNodes !== undefined &amp;&amp; (
+                    &lt;Button
+                        size="sm"
+                        colorScheme="teal"
+                        m="2%"
+                        isDisabled={isModelSavedLocal}
+                        onClick={() => {
+                            const modelForSim = newModel.findIndex(
+                                (mod: NewModelsParams) => mod.idNewModel === id
+                            );
+                            const isInitialConditionsVoid = newModel[
+                                modelForSim
+                            ].initialConditions.some((init) => {
+                                if (
+                                    Object.values(init.conditionsValues).every(
+                                        (values) => values === 0
+                                    )
+                                ) {
+                                    return true;
+                                }
+                                return false;
+                            });
+                            if (isInitialConditionsVoid) {
+                                toast({
+                                    position: "bottom-left",
+                                    title: "Updated failed",
+                                    description:
+                                        "There is one or more nodes with all initial conditions values as zero ",
+                                    status: "error",
+                                    duration: 3000,
+                                    isClosable: true,
+                                });
+                            } else {
+                                getModelCompleteObj();
+                                toast({
+                                    position: "bottom-left",
+                                    title: "Model is ready",
+                                    description: "Model is enabled to simulate",
+                                    status: "success",
+                                    duration: 3000,
+                                    isClosable: true,
+                                });
+                            }
+                        }}
+                    >
+                        Save Model
+                    &lt;/Button>
+                )}
+            &lt;/Flex>
+            {showSectionInitialConditions &amp;&amp; (
+                &lt;Flex
+                    direction="column"
+                    w="60%"
+                    m="0 2%"
+                    bg="#FAFAFA"
+                    borderRadius="6px"
+                    boxShadow="sm"
+                    overflowY="auto"
+                >
+                    {dataSourceValue === "geographic" &amp;&amp;
+                        areaSelectedValue !== undefined &amp;&amp;
+                        areaSelectedValue !== "" &amp;&amp; (
+                            &lt;ModelsMap idGeo={areaSelectedValue} />
+                        )}
+                    {numberOfNodes !== 0 &amp;&amp; (
+                        &lt;InitialConditionsModels
+                            modelName={modelName}
+                            modelValue={modelValue}
+                            populationValue={populationValue}
+                            id={id}
+                            idGeo={areaSelectedValue}
+                            idGraph={0}
+                            dataSourceValue={dataSourceValue}
+                            initialConditionsGraph={initialConditions}
+                            startDate={startDate}
+                            setStartDate={setStartDate}
+                        />
+                    )}
+                &lt;/Flex>
+            )}
+            {showSectionVariable &amp;&amp; (
+                &lt;Flex
+                    direction="column"
+                    w="60%"
+                    m="0 2%"
+                    bg="#FAFAFA"
+                    borderRadius="6px"
+                    boxShadow="sm"
+                    overflowY="auto"
+                    p="1rem"
+                    textAlign="center"
+                >
+                    &lt;SectionVariableDependentTime
+                        valuesVariablesDependent={dataViewVariable}
+                        showSectionVariable={setShowSectionVariable}
+                        positionVariableDependentTime={positionVDT}
+                    />
+                &lt;/Flex>
+            )}
+            &lt;Flex direction="column">
+                &lt;Icon
+                    color="#16609E"
+                    as={DeleteIcon}
+                    cursor="pointer"
+                    mb="0.3rem"
+                    onClick={() => {
+                        setNewModel({
+                            type: "remove",
+                            element: id,
+                        });
+                        setCompleteModel({
+                            type: "remove",
+                            element: id,
+                        });
+                        deleteFromLocalStorage();
+                        setAllGraphicData([]);
+                        setRealDataSimulationKeys([]);
+                        setDataToShowInMap([]);
+                        setAllResults([].concat([], []));
+                        setTabIndex(newModel.length - 2);
+                    }}
+                />
+                &lt;ExportModels idModel={id} />
+            &lt;/Flex>
+        &lt;/Flex>
+    );
+};
+
+export default ModelMainTab;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

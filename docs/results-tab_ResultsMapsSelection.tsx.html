@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> results-tab/ResultsMapsSelection.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>results-tab/ResultsMapsSelection.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable sonarjs/cognitive-complexity */
+import {
+    Switch,
+    Flex,
+    Text,
+    Button,
+    FormControl,
+    FormLabel,
+    Select,
+    Radio,
+    RadioGroup,
+    DrawerFooter,
+    Grid,
+} from "@chakra-ui/react";
+import React, { useContext, useEffect, useState } from "react";
+import { GeometryObject } from "topojson-specification";
+
+import countiesData_ from "../../data/counties-10m.json";
+import stateData_ from "../../data/statesResults-10m.json";
+import { GraphicsData } from "context/GraphicsContext";
+import { NewModelSetted } from "context/NewModelsContext";
+import { SelectFeature } from "context/SelectFeaturesContext";
+import { MapResultsData } from "types/GraphicsTypes";
+import { NewModelsAllParams } from "types/SimulationTypes";
+
+interface Props {
+    onClose: (val: boolean) => void;
+}
+
+/**
+ * Component to configure the display of results on maps.
+ * @subcategory Results
+ * @component
+ */
+const ResultsMapsSelection = ({ onClose }: Props) => {
+    const [isMap1Checked, setIsMap1Checked] = useState([false, false]);
+    const [initialConditionsCheckBox, setinitialConditionsCheckBox] = useState([
+        [],
+        [],
+    ]);
+    const [initialConditionsRealCheckBox, setinitialConditionsRealCheckBox] =
+        useState([[], []]);
+    const [value, setValue] = React.useState(["", ""]);
+    const [simIdToShowInMap, setSimIdToShowInMap] = useState(["", ""]);
+    const [placeholderText, setPlaceholderText] = useState([
+        "Select option",
+        "Select option",
+    ]);
+    const [geoMapInfo, setGeoMapInfo] = useState&lt;unknown[] | GeometryObject[]>([
+        {},
+        {},
+    ]);
+
+    const {
+        dataToShowInMap,
+        setDataToShowInMap,
+        allGraphicData,
+        setAllResults,
+    } = useContext(GraphicsData);
+    const { geoSelections } = useContext(SelectFeature);
+    const mapArray = ["Map 1", "Map 2"];
+    const { selectedModelsToSimulate } = useContext(NewModelSetted);
+
+    /**
+     * Returns an array with the keys of the initial conditions according to the id of the simulation.
+     * @param {number} simId simulation id.
+     * @returns {string[]}
+     */
+    const getInitialConditionsCheck = (simId, typeSim) => {
+        // const initialConditionsSim = selectedModelsToSimulate.filter(
+        //     (sim: NewModelsAllParams) => {
+        //         return sim.idNewModel.toString() === simId;
+        //     }
+        // );
+
+        // if (initialConditionsSim[0].modelType === "seir") {
+        if (typeSim === "Sim") {
+            return ["E", "E_d", "I", "I_d", "R", "R_d", "S"];
+        }
+        return ["D_d", "D_ac", "I", "I_ac", "I_d", "P"];
+
+        // }
+        // return Object.keys(
+        //     initialConditionsSim[0]?.initialConditions[0].conditionsValues
+        // );
+    };
+
+    useEffect(() => {
+        const placeholderTextAux = placeholderText;
+        if (dataToShowInMap.length === 1) {
+            placeholderTextAux[0] = dataToShowInMap[0].nameSim;
+            setPlaceholderText(placeholderTextAux);
+        }
+        if (dataToShowInMap.length === 2) {
+            placeholderTextAux[0] = dataToShowInMap[0].nameSim;
+            placeholderTextAux[1] = dataToShowInMap[1].nameSim;
+            setPlaceholderText(placeholderTextAux);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    useEffect(() => {
+        const simIdToShowInMapAux = simIdToShowInMap;
+        const geoMapInfoAux = geoMapInfo;
+        const valueAux = value;
+        const initialConditionsCheckBoxAux = initialConditionsCheckBox;
+        const initialConditionsRealCheckBoxAux = initialConditionsRealCheckBox;
+        if (
+            dataToShowInMap.length === 1 &amp;&amp;
+            dataToShowInMap[0].nameSim !== undefined
+        ) {
+            setIsMap1Checked([true, false]);
+            simIdToShowInMapAux[0] = dataToShowInMap[0].idSim;
+            geoMapInfoAux[0] = dataToShowInMap[0].geoDataSelected;
+            setSimIdToShowInMap(simIdToShowInMapAux);
+            setGeoMapInfo(geoMapInfoAux);
+            valueAux[0] = dataToShowInMap[0].parameter;
+            setValue(valueAux);
+            initialConditionsCheckBoxAux[0] = getInitialConditionsCheck(
+                dataToShowInMap[0].idSim,
+                "Sim"
+            );
+            initialConditionsRealCheckBoxAux[0] = getInitialConditionsCheck(
+                dataToShowInMap[0].idSim,
+                "Real"
+            );
+            setinitialConditionsCheckBox(initialConditionsCheckBoxAux);
+            setinitialConditionsRealCheckBox(initialConditionsRealCheckBoxAux);
+        }
+        if (
+            dataToShowInMap.length === 2 &amp;&amp;
+            dataToShowInMap[1].nameSim !== undefined
+        ) {
+            setIsMap1Checked([true, true]);
+            simIdToShowInMapAux[0] = dataToShowInMap[0].idSim;
+            simIdToShowInMapAux[1] = dataToShowInMap[1].idSim;
+            geoMapInfoAux[0] = dataToShowInMap[0].geoDataSelected;
+            geoMapInfoAux[1] = dataToShowInMap[1].geoDataSelected;
+            setSimIdToShowInMap(simIdToShowInMapAux);
+            setGeoMapInfo(geoMapInfoAux);
+            valueAux[0] = dataToShowInMap[0].parameter;
+            valueAux[1] = dataToShowInMap[1].parameter;
+            setValue(valueAux);
+            initialConditionsCheckBoxAux[0] = getInitialConditionsCheck(
+                dataToShowInMap[0].idSim,
+                "Sim"
+            );
+            initialConditionsRealCheckBoxAux[0] = getInitialConditionsCheck(
+                dataToShowInMap[0].idSim,
+                "Real"
+            );
+            initialConditionsCheckBoxAux[1] = getInitialConditionsCheck(
+                dataToShowInMap[1].idSim,
+                "Sim"
+            );
+            initialConditionsRealCheckBoxAux[1] = getInitialConditionsCheck(
+                dataToShowInMap[1].idSim,
+                "Real"
+            );
+            setinitialConditionsCheckBox(initialConditionsCheckBoxAux);
+            setinitialConditionsRealCheckBox(initialConditionsRealCheckBoxAux);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    /**
+     * Returns a json with the data of the polygons to use.
+     * @param {number} idSim simulation id.
+     * @returns {GeometryObject}
+     */
+    const getGeoDataSelected = (idSim) => {
+        const { idGeo } = selectedModelsToSimulate.filter(
+            (sim: NewModelsAllParams) => {
+                return sim.idNewModel.toString() === idSim;
+            }
+        )[0];
+
+        const { scale } = geoSelections.filter((geoSelection) => {
+            return geoSelection.id === idGeo;
+        })[0];
+
+        const geoSelection = geoSelections.find(
+            (element) => element.id === idGeo
+        );
+        let dataAux;
+        if (scale === "States") {
+            dataAux = JSON.parse(JSON.stringify(stateData_));
+            const stateObject = JSON.parse(
+                JSON.stringify(stateData_.objects.states.geometries)
+            );
+            const statesGeometries = geoSelection.featureSelected.map((id) => {
+                return stateObject.filter((geometrieId) => {
+                    return geometrieId.id === id;
+                })[0];
+            });
+            dataAux.objects.states.geometries = statesGeometries;
+        }
+        if (scale === "Counties") {
+            dataAux = JSON.parse(JSON.stringify(countiesData_));
+            const countiesObject = JSON.parse(
+                JSON.stringify(countiesData_.objects.counties.geometries)
+            );
+            const countiesGeometries = geoSelection.featureSelected.map(
+                (id) => {
+                    return countiesObject.filter((geometrieId) => {
+                        return geometrieId.id === id;
+                    })[0];
+                }
+            );
+            dataAux.objects.counties.geometries = countiesGeometries;
+        }
+
+        return dataAux;
+    };
+
+    /**
+     * Returns an object with the information to display on maps.
+     * @param {number} index
+     * @returns {MapResultsData}
+     */
+    const getDataToSave = (index: number) => {
+        const {
+            name,
+            parameters,
+            idGeo,
+            t_init: tInit,
+        } = selectedModelsToSimulate.filter((sim: NewModelsAllParams) => {
+            return sim.idNewModel.toString() === simIdToShowInMap[index];
+        })[0];
+
+        const { scale } = geoSelections.filter((geoSelection) => {
+            return geoSelection.id === idGeo;
+        })[0];
+
+        return {
+            scale,
+            nameSim: name,
+            idSim: simIdToShowInMap[index],
+            parameter: value[index],
+            idGeo,
+            duration: parameters.t_end,
+            date: tInit,
+            idMap: index,
+            geoDataSelected: geoMapInfo[index],
+        };
+    };
+
+    /**
+     * Save the map information in the results context by clicking the "OK" button.
+     */
+    const saveDataToShowInMap = () => {
+        const dataToShowInMapAux = dataToShowInMap;
+        if (value[0] !== "") {
+            const map1 = getDataToSave(0);
+            dataToShowInMapAux[0] = map1;
+        }
+        if (value[1] !== "") {
+            const map2 = getDataToSave(1);
+            dataToShowInMapAux[1] = map2;
+        }
+        const setMaps = new Promise&lt;void>((resolve, reject) => {
+            setDataToShowInMap(dataToShowInMapAux);
+            setAllResults([]);
+            resolve();
+        });
+        setMaps.then(() => {
+            setAllResults([].concat(dataToShowInMapAux, allGraphicData));
+        });
+    };
+
+    return (
+        &lt;>
+            {mapArray.map((map, index) => {
+                const placeholderAux = placeholderText[index];
+                return (
+                    &lt;FormControl
+                        display="flex"
+                        alignItems="center"
+                        flexDirection="column"
+                        m="5% 0"
+                        key={map}
+                    >
+                        &lt;Flex w="100%" m="2% 0">
+                            &lt;FormLabel mb="0">{map}&lt;/FormLabel>
+                            &lt;Switch
+                                isChecked={isMap1Checked[index]}
+                                onChange={(e) => {
+                                    if (e.target.checked === false) {
+                                        setinitialConditionsCheckBox([
+                                            ...initialConditionsCheckBox.slice(
+                                                0,
+                                                index
+                                            ),
+                                            [],
+                                            ...initialConditionsCheckBox.slice(
+                                                index + 1
+                                            ),
+                                        ]);
+                                        setinitialConditionsRealCheckBox([
+                                            ...initialConditionsRealCheckBox.slice(
+                                                0,
+                                                index
+                                            ),
+                                            [],
+                                            ...initialConditionsRealCheckBox.slice(
+                                                index + 1
+                                            ),
+                                        ]);
+                                        setValue([
+                                            ...value.slice(0, index),
+                                            "",
+                                            ...value.slice(index + 1),
+                                        ]);
+                                        setSimIdToShowInMap([
+                                            ...simIdToShowInMap.slice(0, index),
+                                            "",
+                                            ...simIdToShowInMap.slice(
+                                                index + 1
+                                            ),
+                                        ]);
+                                        setGeoMapInfo([
+                                            ...geoMapInfo.slice(0, index),
+                                            {},
+                                            ...geoMapInfo.slice(index + 1),
+                                        ]);
+                                    }
+
+                                    setIsMap1Checked([
+                                        ...isMap1Checked.slice(0, index),
+                                        e.target.checked,
+                                        ...isMap1Checked.slice(index + 1),
+                                    ]);
+                                }}
+                            />
+                        &lt;/Flex>
+                        {isMap1Checked[index] ? (
+                            &lt;>
+                                &lt;Select
+                                    placeholder={placeholderAux}
+                                    w="95%"
+                                    m="0 2% 3% 2%"
+                                    onChange={(e) => {
+                                        const simId = e.target.value;
+                                        // const initialConditionsSim =
+                                        //     selectedModelsToSimulate.filter(
+                                        //         (sim: NewModelsAllParams) => {
+                                        //             return (
+                                        //                 sim.idNewModel.toString() ===
+                                        //                 simId
+                                        //             );
+                                        //         }
+                                        //     );
+                                        // let initialConditionsStrg;
+                                        // let initialConditionsRealStrg;
+                                        // if (
+                                        //     initialConditionsSim[0]
+                                        //         .populationType ===
+                                        //     "metapopulation"
+                                        // ) {
+                                        const initialConditionsStrg = [
+                                            "E",
+                                            "E_d",
+                                            "I",
+                                            "I_d",
+                                            "R",
+                                            "R_d",
+                                            "S",
+                                        ];
+                                        const initialConditionsRealStrg = [
+                                            "D_d",
+                                            "D_ac",
+                                            "I",
+                                            "I_ac",
+                                            "I_d",
+                                            "P",
+                                        ];
+                                        // } else {
+                                        //     initialConditionsStrg = Object.keys(
+                                        //         initialConditionsSim[0]
+                                        //             .initialConditions[0]
+                                        //             .conditionsValues
+                                        //     );
+                                        //     initialConditionsRealStrg =
+                                        //         Object.keys(
+                                        //             initialConditionsSim[0]
+                                        //                 .initialConditions[0]
+                                        //                 .conditionsValues
+                                        //         );
+                                        // }
+                                        setinitialConditionsCheckBox([
+                                            ...initialConditionsCheckBox.slice(
+                                                0,
+                                                index
+                                            ),
+                                            initialConditionsStrg,
+                                            ...initialConditionsCheckBox.slice(
+                                                index + 1
+                                            ),
+                                        ]);
+                                        setinitialConditionsRealCheckBox([
+                                            ...initialConditionsRealCheckBox.slice(
+                                                0,
+                                                index
+                                            ),
+                                            initialConditionsRealStrg,
+                                            ...initialConditionsRealCheckBox.slice(
+                                                index + 1
+                                            ),
+                                        ]);
+                                        setSimIdToShowInMap([
+                                            ...simIdToShowInMap.slice(0, index),
+                                            simId,
+                                            ...simIdToShowInMap.slice(
+                                                index + 1
+                                            ),
+                                        ]);
+
+                                        if (index === 0) {
+                                            const geoInfoMap1 =
+                                                getGeoDataSelected(simId);
+
+                                            setGeoMapInfo([
+                                                geoInfoMap1,
+                                                geoMapInfo[1],
+                                            ]);
+                                        }
+                                        if (index === 1) {
+                                            const geoInfoMap2 =
+                                                getGeoDataSelected(simId);
+
+                                            setGeoMapInfo([
+                                                geoMapInfo[0],
+                                                geoInfoMap2,
+                                            ]);
+                                        }
+                                    }}
+                                >
+                                    {selectedModelsToSimulate.map(
+                                        (sim: NewModelsAllParams) => {
+                                            return (
+                                                sim.typeSelection ===
+                                                    "geographic" &amp;&amp; (
+                                                    &lt;option
+                                                        key={sim.idNewModel}
+                                                        value={sim.idNewModel}
+                                                    >
+                                                        {sim.name}
+                                                    &lt;/option>
+                                                )
+                                            );
+                                        }
+                                    )}
+                                &lt;/Select>
+                                {initialConditionsCheckBox[index].length >
+                                    0 &amp;&amp; (
+                                    &lt;RadioGroup
+                                        w="100%"
+                                        onChange={(e) => {
+                                            setValue([
+                                                ...value.slice(0, index),
+                                                e,
+                                                ...value.slice(index + 1),
+                                            ]);
+                                        }}
+                                        value={value[index]}
+                                    >
+                                        &lt;Text mx="7%">Results&lt;/Text>
+                                        &lt;Grid
+                                            mx="7%"
+                                            templateColumns="repeat(3, 1fr)"
+                                            gap={3}
+                                        >
+                                            {initialConditionsCheckBox[
+                                                index
+                                            ]?.map((paramKey) => {
+                                                return (
+                                                    &lt;Radio
+                                                        bg="white"
+                                                        value={`${paramKey}`}
+                                                        key={paramKey}
+                                                    >
+                                                        {paramKey}
+                                                    &lt;/Radio>
+                                                );
+                                            })}
+                                        &lt;/Grid>
+                                        &lt;Text mx="7%">Data&lt;/Text>
+                                        &lt;Grid
+                                            mx="7%"
+                                            templateColumns="repeat(3, 1fr)"
+                                            gap={3}
+                                        >
+                                            {initialConditionsRealCheckBox[
+                                                index
+                                            ]?.map((paramKeyData) => {
+                                                if (paramKeyData !== "R") {
+                                                    return (
+                                                        &lt;Radio
+                                                            bg="white"
+                                                            value={`${paramKeyData} Real`}
+                                                            key={`${paramKeyData} Real`}
+                                                        >
+                                                            {paramKeyData}
+                                                        &lt;/Radio>
+                                                    );
+                                                }
+                                                return false;
+                                            })}
+                                        &lt;/Grid>
+                                    &lt;/RadioGroup>
+                                )}
+                            &lt;/>
+                        ) : (
+                            &lt;Select
+                                placeholder="Select option"
+                                w="95%"
+                                m="0 2%"
+                                isDisabled
+                            />
+                        )}
+                    &lt;/FormControl>
+                );
+            })}
+            &lt;DrawerFooter justifyContent="space-around">
+                &lt;Button
+                    colorScheme="teal"
+                    onClick={() => {
+                        saveDataToShowInMap();
+                        onClose(true);
+                    }}
+                >
+                    Ok
+                &lt;/Button>
+                &lt;Button
+                    variant="outline"
+                    onClick={() => {
+                        onClose(true);
+                    }}
+                >
+                    Cancel
+                &lt;/Button>
+            &lt;/DrawerFooter>
+        &lt;/>
+    );
+};
+
+export default ResultsMapsSelection;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

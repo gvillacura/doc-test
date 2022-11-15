@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> data-fit-tab/index.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>data-fit-tab/index.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable complexity */
+/* eslint-disable sonarjs/no-duplicate-string */
+/* eslint-disable @typescript-eslint/naming-convention */
+import { CheckCircleIcon, WarningTwoIcon } from "@chakra-ui/icons";
+import {
+    Select,
+    Text,
+    Box,
+    Flex,
+    Button,
+    Center,
+    Spinner,
+    useToast,
+    Tag,
+    TagLabel,
+    TagRightIcon,
+} from "@chakra-ui/react";
+import dynamic from "next/dynamic";
+import React, { useState, useContext, useEffect } from "react";
+
+import { getParametersFitModel } from "components/new-model/GetParametersByNodes";
+import { DataFit } from "context/DataFitContext";
+import { NewModelSetted } from "context/NewModelsContext";
+import { EpidemicsData } from "types/ControlPanelTypes";
+import { NewModelsAllParams } from "types/SimulationTypes";
+import postData from "utils/fetchData";
+
+import EndPointSource from "./EndPointSource";
+import FileSource from "./FileSource";
+import FitParemetersTabs from "./FitParemetersTabs";
+import SampleSource from "./SampleSource";
+
+import "react-datepicker/dist/react-datepicker.css";
+
+const Graphic = dynamic(() => import("./GraphicDataFit"), {
+    loading: () => (
+        &lt;Flex justifyContent="center" alignItems="center">
+            &lt;Spinner
+                thickness="4px"
+                speed="0.65s"
+                emptyColor="gray.200"
+                color="blue.500"
+                size="xl"
+            />
+        &lt;/Flex>
+    ),
+    ssr: false,
+});
+
+/**
+ * Component in charge of data adjustment.
+ * @category DataFitTab
+ * @component
+ */
+const DataFitTab = () => {
+    const toast = useToast();
+    const [dataSourceType, setDataSourceType] = useState("");
+    const [algorithmValue, setAlgorithmValue] = useState(undefined);
+    const [modelId, setModelId] = useState&lt;number>(undefined);
+    const [geoSelectionId, setGeoSelectionId] = useState(0);
+    const [startDate, setStartDate] = useState(new Date(2021, 11, 31));
+    const [dataValues, setDataValues] = useState([]);
+    const [parameterName, setParameterName] = useState(undefined);
+    const [isSimulating, setIsSimulating] = useState(false);
+    const [enableFitButton, setEnableFitButton] = useState(false);
+    // Cambiar valores del radio button a nombres representativos de los ejemplos
+    const [sampleSourceValue, setSampleSourceValue] = useState("1");
+    const { fittedData, realDataToFit, setFittedData, setRealDataToFit } =
+        useContext(DataFit);
+    const { completeModel, setCompleteModel, setNewModel } =
+        useContext(NewModelSetted);
+
+    useEffect(() => {
+        if (
+            modelId !== undefined &amp;&amp;
+            algorithmValue !== undefined &amp;&amp;
+            dataValues.length !== 0
+        ) {
+            setEnableFitButton(true);
+        } else {
+            setEnableFitButton(false);
+        }
+    }, [algorithmValue, dataValues.length, modelId]);
+
+    useEffect(() => {
+        if (algorithmValue === "Intervals") {
+            setParameterName("New daily infected");
+        }
+        if (algorithmValue === "Sequential") {
+            setParameterName("Active infected");
+        }
+    }, [algorithmValue]);
+
+    /**
+     * Returns a list with indices and values equal to the number of days in the simulation.
+     * @param tEnd simulation duration.
+     * @returns {Object}
+     */
+    const getTimeData = (tEnd) => {
+        let timeObject = {};
+        for (let index = 0; index &lt;= tEnd; index += 1) {
+            timeObject = { ...timeObject, [index]: index };
+        }
+        return timeObject;
+    };
+
+    /**
+     * Returns the configuration object to call the dataFit api.
+     * @returns {Object}
+     */
+    const getFitObjectConfig = () => {
+        const { parameters: modelParameters } = completeModel.find(
+            (model: NewModelsAllParams) => model.idNewModel === modelId
+        );
+        return {
+            // refactorizar cuando el endpoint de datafit reciba funciones
+            // tE_I: modelParameters.tE_I,
+            // tI_R: modelParameters.tI_R,
+            // tE_I: 5,
+            // tI_R: 10,
+            tE_I: +modelParameters.tE_I.val,
+            tI_R: +modelParameters.tI_R.val,
+            method: algorithmValue,
+            I_d_data: JSON.stringify(realDataToFit[0].I_d_data),
+            t_data: JSON.stringify(getTimeData(modelParameters.t_end)),
+        };
+    };
+
+    /**
+     * Gets the fitted data from the "dataFit" enpoint.
+     * @returns object with the new parameter values.
+     */
+    async function getFittedData() {
+        const objectConfig = getFitObjectConfig();
+
+        // eslint-disable-next-line sonarjs/prefer-immediate-return
+        const res = await postData(
+            "http://192.168.2.131:5003/datafit",
+            objectConfig
+        );
+        return res;
+    }
+
+    /**
+     * Adds the fitted model to local storage and saved models.
+     * @param fittedData2 object with the new adjusted values from the endpoint.
+     */
+    const addNewFitModel = (fittedData2) => {
+        const originalModel = completeModel.find(
+            (model: NewModelsAllParams) => model.idNewModel === modelId
+        );
+        const fittedModelData = {
+            idNewModel: Date.now(),
+            name: `${originalModel.name}fitted`,
+            modelType: originalModel.modelType,
+            populationType: originalModel.populationType,
+            typeSelection: originalModel.typeSelection,
+            idGeo: originalModel.idGeo,
+            idGraph: originalModel.idGraph,
+            initialConditions: originalModel.initialConditions,
+            numberNodes: originalModel.numberNodes,
+            t_init: originalModel.t_init,
+        };
+
+        const parametersValues: EpidemicsData = getParametersFitModel(
+            originalModel.parameters,
+            fittedData2
+        );
+
+        setCompleteModel({
+            type: "add",
+            payload: { ...fittedModelData, parameters: parametersValues },
+        });
+
+        setNewModel({
+            type: "add",
+            payload: fittedModelData,
+        });
+
+        localStorage.setItem(
+            "newModels",
+            JSON.stringify([
+                ...completeModel,
+                { ...fittedModelData, parameters: parametersValues },
+            ])
+        );
+    };
+
+    /**
+     * If there is a selected model, it sends it to be adjusted.
+     */
+    const handleFetch = async () => {
+        try {
+            setIsSimulating(true);
+            const fitRes = await getFittedData();
+            const fitResModel = { model: fitRes.results.simulation };
+            const val = Object.values(fitResModel);
+            const keys = Object.keys(fitResModel);
+            const resFittedData = val
+                .map((simString: string) => JSON.parse(simString))
+                .map((sim, i) => ({
+                    name: keys[i],
+                    ...sim,
+                }));
+
+            const fittedData2 = {
+                I: resFittedData[0].I_d,
+                I_ac: resFittedData[0].I_d,
+                name: resFittedData[0].name,
+                beta: fitRes.results.beta_values,
+                beta_days: fitRes.results.beta_days,
+                mu: fitRes.results.mu,
+            };
+            setFittedData([fittedData2]);
+            addNewFitModel(fittedData2);
+        } catch (error) {
+            if (modelId === undefined) {
+                toast({
+                    position: "bottom-left",
+                    title: "Error",
+                    description: "Please, choose a model",
+                    status: "error",
+                    duration: 3000,
+                    isClosable: true,
+                });
+            } else {
+                toast({
+                    position: "bottom-left",
+                    title: "Error",
+                    description: `${error.message}`,
+                    status: "error",
+                    duration: 3000,
+                    isClosable: true,
+                });
+            }
+        } finally {
+            setIsSimulating(false);
+        }
+    };
+
+    return (
+        &lt;Box h="100%">
+            &lt;Box h="5vh" mh="5vh">
+                &lt;Text color="#16609E" fontSize="18px" fontWeight="bold">
+                    Data Fit
+                &lt;/Text>
+            &lt;/Box>
+            &lt;Flex ml="2%" p="0" h="97%">
+                &lt;Flex
+                    direction="column"
+                    w="35%"
+                    bg="#FAFAFA"
+                    borderRadius="6px"
+                    p="2%"
+                    h="88vh"
+                    boxShadow="sm"
+                    justify="space-between"
+                >
+                    &lt;Flex direction="column">
+                        &lt;Box mb="3%">
+                            &lt;Text fontSize="14px" fontWeight={500}>
+                                Model
+                            &lt;/Text>
+                            &lt;Select
+                                w="13rem"
+                                fontSize="14px"
+                                placeholder="Select a model"
+                                size="sm"
+                                value={modelId}
+                                onChange={(e) => {
+                                    setModelId(+e.target.value);
+                                    if (e.target.value !== "") {
+                                        const { idGeo } = completeModel.filter(
+                                            (model: NewModelsAllParams) => {
+                                                return (
+                                                    model.idNewModel ===
+                                                    +e.target.value
+                                                );
+                                            }
+                                        )[0];
+                                        // setGeoSelectionId(0);
+                                        if (idGeo !== undefined) {
+                                            const stringIdGeo =
+                                                idGeo.toString();
+                                            setGeoSelectionId(
+                                                parseInt(stringIdGeo, 10)
+                                            );
+                                        } else {
+                                            setGeoSelectionId(0);
+                                        }
+                                    }
+                                    setFittedData([]);
+                                    setRealDataToFit([]);
+                                    setSampleSourceValue("1");
+                                    setDataValues([]);
+                                }}
+                            >
+                                {completeModel.length > 0 &amp;&amp;
+                                    completeModel.map(
+                                        (model: NewModelsAllParams) => {
+                                            return (
+                                                &lt;option
+                                                    key={model.idNewModel}
+                                                    value={model.idNewModel}
+                                                >
+                                                    {model.name}
+                                                &lt;/option>
+                                            );
+                                        }
+                                    )}
+                            &lt;/Select>
+                        &lt;/Box>
+                        &lt;Box mb="3%">
+                            &lt;Text fontSize="14px" fontWeight={500}>
+                                Fit Algorithm
+                            &lt;/Text>
+                            &lt;Select
+                                w="13rem"
+                                fontSize="14px"
+                                placeholder="Select a Algorithm"
+                                size="sm"
+                                value={algorithmValue}
+                                onChange={(e) => {
+                                    setAlgorithmValue(e.target.value);
+                                    setFittedData([]);
+                                    setRealDataToFit([]);
+                                    setDataValues([]);
+                                    setSampleSourceValue("1");
+                                }}
+                            >
+                                &lt;option key="algorithm-1" value="Intervals">
+                                    Intervals
+                                &lt;/option>
+                                &lt;option key="algorithm-2" value="Sequential">
+                                    Sequential
+                                &lt;/option>
+                            &lt;/Select>
+                        &lt;/Box>
+                        &lt;Box mb="3%">
+                            &lt;Text fontSize="14px" fontWeight={500}>
+                                Data Source
+                            &lt;/Text>
+                            &lt;Select
+                                w="13rem"
+                                fontSize="14px"
+                                placeholder="Select a source"
+                                size="sm"
+                                value={dataSourceType}
+                                onChange={(e) => {
+                                    setDataSourceType(e.target.value);
+                                    setFittedData([]);
+                                    setRealDataToFit([]);
+                                    setDataValues([]);
+                                    setSampleSourceValue("1");
+                                    // setGeoSelectionId(0);
+                                }}
+                            >
+                                {/* &lt;option key="file" value="file">
+                                    File Upload
+                                &lt;/option> */}
+                                &lt;option key="sample" value="sample">
+                                    Sample Data
+                                &lt;/option>
+                                {geoSelectionId !== undefined &amp;&amp;
+                                    geoSelectionId !== 0 &amp;&amp; (
+                                        &lt;option key="endpoint" value="endpoint">
+                                            Endpoint
+                                        &lt;/option>
+                                    )}
+                            &lt;/Select>
+                        &lt;/Box>
+                        {/* {dataSourceType === "file" &amp;&amp; &lt;FileSource />} */}
+                        {dataSourceType === "sample" &amp;&amp; (
+                            &lt;SampleSource
+                                value={sampleSourceValue}
+                                setValue={setSampleSourceValue}
+                                setDataValues={setDataValues}
+                            />
+                        )}
+                        {dataSourceType === "endpoint" &amp;&amp; (
+                            &lt;EndPointSource
+                                modelId={modelId}
+                                setDataValues={setDataValues}
+                                algorithmValue={algorithmValue}
+                            />
+                        )}
+                        &lt;Box mb="3%">
+                            &lt;Text fontSize="14px" fontWeight={500}>
+                                Data For Fit
+                            &lt;/Text>
+                            {dataValues.length > 0 ? (
+                                &lt;Tag
+                                    size="sm"
+                                    variant="outline"
+                                    colorScheme="green"
+                                >
+                                    {/* Refactorizar cuando se usen diferentes infectados */}
+                                    {/* &lt;TagLabel>{parameterName} Loaded&lt;/TagLabel> */}
+                                    &lt;TagLabel>Daily infected Loaded&lt;/TagLabel>
+                                    &lt;TagRightIcon as={CheckCircleIcon} />
+                                &lt;/Tag>
+                            ) : (
+                                &lt;Tag
+                                    size="sm"
+                                    variant="outline"
+                                    colorScheme="red"
+                                >
+                                    &lt;TagLabel>Pending&lt;/TagLabel>
+                                    &lt;TagRightIcon as={WarningTwoIcon} />
+                                &lt;/Tag>
+                            )}
+                        &lt;/Box>
+                    &lt;/Flex>
+                    &lt;Box mt="2%">
+                        &lt;Center>
+                            &lt;Button
+                                colorScheme="blue"
+                                color="white"
+                                isDisabled={!enableFitButton}
+                                onClick={() => {
+                                    handleFetch();
+                                }}
+                            >
+                                {isSimulating ? (
+                                    &lt;>
+                                        &lt;Spinner
+                                            thickness="4px"
+                                            speed="0.65s"
+                                            emptyColor="gray.200"
+                                            color="blue.500"
+                                        />
+                                        &lt;Text pl="1rem">Fit...&lt;/Text>
+                                    &lt;/>
+                                ) : (
+                                    `Fit`
+                                )}
+                            &lt;/Button>
+                        &lt;/Center>
+                    &lt;/Box>
+                &lt;/Flex>
+                &lt;Flex direction="column" w="65%" m="0 2%" h="88vh">
+                    &lt;Flex
+                        h="50%"
+                        bg="#FAFAFA"
+                        borderRadius="6px"
+                        justify="center"
+                        align="center"
+                        mb="2%"
+                        boxShadow="sm"
+                    >
+                        {fittedData.length > 0 &amp;&amp; realDataToFit.length > 0 ? (
+                            &lt;Graphic algorithmValue={algorithmValue} />
+                        ) : (
+                            &lt;Text>Graphic&lt;/Text>
+                        )}
+                    &lt;/Flex>
+                    &lt;Box
+                        h="50%"
+                        bg="#FAFAFA"
+                        borderRadius="6px"
+                        p="2%"
+                        boxShadow="sm"
+                        overflowY="auto"
+                    >
+                        {fittedData.length > 0 &amp;&amp; realDataToFit.length > 0 ? (
+                            &lt;FitParemetersTabs />
+                        ) : (
+                            &lt;Text>Fit Parameters Table&lt;/Text>
+                        )}
+                    &lt;/Box>
+                &lt;/Flex>
+            &lt;/Flex>
+        &lt;/Box>
+    );
+};
+export default DataFitTab;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

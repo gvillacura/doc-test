@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> models-tab/ImportModels.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>models-tab/ImportModels.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable complexity */
+/* eslint-disable no-nested-ternary */
+import { AttachmentIcon } from "@chakra-ui/icons";
+import {
+    useDisclosure,
+    useToast,
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalCloseButton,
+    ModalBody,
+    Center,
+    Tooltip,
+    IconButton,
+} from "@chakra-ui/react";
+import _ from "lodash";
+import { useContext } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import { REGEXTYPEMODEL } from "constants/verifyAttrTomlConstants";
+import { NewModelSetted } from "context/NewModelsContext";
+import { SelectFeature } from "context/SelectFeaturesContext";
+import { update } from "store/ControlPanel";
+import { EpidemicsData, InitialConditions } from "types/ControlPanelTypes";
+import { DataParameters } from "types/ModelsTypes";
+import { Action } from "types/SelectFeaturesTypes";
+import { EpicConfigToml } from "types/TomlTypes";
+import addInLocalStorage from "utils/addInLocalStorage";
+import compareDate from "utils/compareDate";
+import convertFiles, { TypeFile } from "utils/convertFiles";
+import {
+    cleanInitialConditions,
+    TomlInitialConditions,
+    prepareChunk,
+    // TomlInitialConditions,
+} from "utils/createChunkDependentTime";
+import verifyAttrTomlRight from "utils/verifyAttrTomlRight";
+import verifyTomlTypesAttr from "utils/verifyTomlTypesAttr";
+
+import getGeoNames from "./getGeoNames";
+
+const position = "bottom-left";
+
+/**
+ * Component that provides the functionality to be able to import models.
+ * @subcategory models-tab
+ * @component
+ */
+const ImportModels = () => {
+    const { setGeoSelections } = useContext(SelectFeature);
+    const { setCompleteModel, setNewModel } = useContext(NewModelSetted);
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const toast = useToast();
+    return (
+        &lt;>
+            &lt;Tooltip label="Upload a simulation from TOML file config">
+                &lt;IconButton
+                    bg="#FFFFFF"
+                    color="#16609E"
+                    aria-label="Call Segun"
+                    size="sm"
+                    cursor="pointer"
+                    icon={&lt;AttachmentIcon />}
+                    onClick={onOpen}
+                />
+            &lt;/Tooltip>
+            &lt;Modal isOpen={isOpen} onClose={onClose} isCentered>
+                &lt;ModalOverlay />
+                &lt;ModalContent>
+                    &lt;ModalHeader>Upload a file&lt;/ModalHeader>
+                    &lt;ModalCloseButton />
+                    &lt;ModalBody>
+                        &lt;Center>
+                            &lt;input
+                                type="file"
+                                accept="application/toml"
+                                onChange={(e) => {
+                                    if (
+                                        window.File &amp;&amp;
+                                        window.FileReader &amp;&amp;
+                                        window.FileList &amp;&amp;
+                                        window.Blob
+                                    ) {
+                                        const reader = new FileReader();
+                                        reader.readAsText(
+                                            e.target.files[0],
+                                            "UTF-8"
+                                        );
+                                        reader.onload = (est) => {
+                                            // import data raw like JSON
+                                            try {
+                                                const importedData: EpicConfigToml =
+                                                    convertFiles(
+                                                        est.target.result,
+                                                        TypeFile.JSON
+                                                    ) as unknown as EpicConfigToml;
+                                                verifyAttrTomlRight(
+                                                    importedData
+                                                );
+                                                verifyTomlTypesAttr(
+                                                    importedData
+                                                );
+                                                // transform parameters, initial conditions, date simulation
+                                                // geographical entities for adding to diferents react context
+                                                const {
+                                                    compartments,
+                                                    name,
+                                                    model,
+                                                } = importedData.model;
+                                                const parameters = {
+                                                    ...importedData.parameters
+                                                        .dynamic,
+                                                    ...importedData.parameters
+                                                        .static,
+                                                    compartments,
+                                                    name_model: name,
+                                                    name: model.match(
+                                                        REGEXTYPEMODEL
+                                                    )[0],
+                                                };
+                                                const geographData =
+                                                    importedData.data;
+                                                const idModel = Date.now();
+                                                const idGeo = Date.now();
+
+                                                const geoForAdd: Action = {
+                                                    type: "addGeoSelection",
+                                                    geoPayload: {
+                                                        id: idGeo,
+                                                        name:
+                                                            geographData
+                                                                .loc_name
+                                                                .length > 0
+                                                                ? geographData.loc_name
+                                                                : "Imported from TOML",
+                                                        scale:
+                                                            (geographData.state
+                                                                .length > 0
+                                                                ? "States"
+                                                                : geographData
+                                                                      .county
+                                                                      .length >
+                                                                  0
+                                                                ? "Counties"
+                                                                : "") ?? "",
+                                                        featureSelected:
+                                                            geographData.state
+                                                                .length > 0
+                                                                ? _.isString(
+                                                                      geographData.state
+                                                                  )
+                                                                    ? Array.of(
+                                                                          geographData.state
+                                                                      )
+                                                                    : Array.from(
+                                                                          geographData.state
+                                                                      )
+                                                                : geographData
+                                                                      .county
+                                                                      .length >
+                                                                  0
+                                                                ? _.isString(
+                                                                      geographData.county
+                                                                  )
+                                                                    ? Array.of(
+                                                                          geographData.county
+                                                                      )
+                                                                    : Array.from(
+                                                                          geographData.county
+                                                                      )
+                                                                : [],
+                                                    },
+                                                };
+
+                                                const alternativeCodes =
+                                                    _.isArray(
+                                                        importedData
+                                                            .initialconditions.I
+                                                    )
+                                                        ? importedData.initialconditions.I.map(
+                                                              (_init, i) =>
+                                                                  `Node ${
+                                                                      i + 1
+                                                                  }`
+                                                          )
+                                                        : ["1"];
+                                                const initialCond = getGeoNames(
+                                                    geoForAdd.geoPayload
+                                                        .featureSelected
+                                                        .length > 0 &amp;&amp;
+                                                        geographData.geo_topology ===
+                                                            "meta"
+                                                        ? geoForAdd.geoPayload
+                                                              .featureSelected
+                                                        : alternativeCodes,
+                                                    geoForAdd.geoPayload.scale
+                                                ).map((cod, i) => {
+                                                    return {
+                                                        name: cod,
+                                                        conditionsValues:
+                                                            Object.entries(
+                                                                importedData.initialconditions
+                                                            ).reduce(
+                                                                (
+                                                                    acc,
+                                                                    [key, value]
+                                                                ) => {
+                                                                    return {
+                                                                        ...acc,
+                                                                        [key]: _.isArray(
+                                                                            value
+                                                                        )
+                                                                            ? value[
+                                                                                  i
+                                                                              ]
+                                                                            : value,
+                                                                    };
+                                                                },
+                                                                {}
+                                                            ),
+                                                    };
+                                                });
+                                                const modelForAdd = {
+                                                    idNewModel: idModel,
+                                                    name,
+                                                    modelType:
+                                                        model.match(
+                                                            REGEXTYPEMODEL
+                                                        )[0],
+                                                    idGeo,
+                                                    t_init: compareDate(
+                                                        parameters.t_init,
+                                                        "2022/05/31"
+                                                    ),
+                                                    populationType: `${importedData.data.geo_topology}population`,
+                                                    idGraph: 0,
+                                                    initialConditions:
+                                                        initialCond,
+                                                    numberNodes:
+                                                        initialCond.length,
+                                                    typeSelection:
+                                                        importedData.data.state
+                                                            .length === 0 &amp;&amp;
+                                                        importedData.data.county
+                                                            .length === 0
+                                                            ? "graph"
+                                                            : "geographic",
+                                                };
+                                                setNewModel({
+                                                    type: "add",
+                                                    payload: modelForAdd,
+                                                });
+                                                setCompleteModel({
+                                                    type: "add",
+                                                    payload: {
+                                                        ...modelForAdd,
+                                                        parameters:
+                                                            prepareChunk(
+                                                                parameters
+                                                            ),
+                                                    },
+                                                });
+                                                if (
+                                                    geoForAdd.geoPayload.scale
+                                                        .length > 0
+                                                ) {
+                                                    setGeoSelections(geoForAdd);
+                                                    addInLocalStorage(
+                                                        [geoForAdd.geoPayload],
+                                                        "geoSelection"
+                                                    );
+                                                }
+                                                addInLocalStorage(
+                                                    [
+                                                        {
+                                                            ...modelForAdd,
+                                                            parameters:
+                                                                prepareChunk(
+                                                                    parameters
+                                                                ),
+                                                        },
+                                                    ],
+                                                    "newModels"
+                                                );
+                                                onClose();
+                                                toast({
+                                                    position,
+                                                    title: "Models imported",
+                                                    description:
+                                                        "Models was imported successfully",
+                                                    status: "success",
+                                                    duration: 5000,
+                                                    isClosable: true,
+                                                });
+                                            } catch (error) {
+                                                toast({
+                                                    position,
+                                                    title: "Error",
+                                                    description: `Uploading simulation failed. Check your TOML config and try later \n ${error}`,
+                                                    status: "error",
+                                                    duration: 5000,
+                                                    isClosable: true,
+                                                });
+                                            }
+                                        };
+                                        reader.onerror = (err) => {
+                                            toast({
+                                                position,
+                                                title: "Error",
+                                                description:
+                                                    "Occurs an error during import process",
+                                                status: "error",
+                                                duration: 5000,
+                                                isClosable: true,
+                                            });
+                                        };
+                                    } else {
+                                        toast({
+                                            position,
+                                            title: "Doesn't supported API",
+                                            description:
+                                                "The File APIs are not fully supported by your browser.",
+                                            status: "error",
+                                            duration: 5000,
+                                            isClosable: true,
+                                        });
+                                    }
+                                }}
+                            />
+                        &lt;/Center>
+                    &lt;/ModalBody>
+                &lt;/ModalContent>
+            &lt;/Modal>
+        &lt;/>
+    );
+};
+
+export default ImportModels;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

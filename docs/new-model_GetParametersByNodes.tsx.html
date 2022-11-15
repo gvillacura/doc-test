@@ -1,0 +1,639 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> new-model/GetParametersByNodes.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>new-model/GetParametersByNodes.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { EpidemicsData } from "types/ControlPanelTypes";
+import { NameFunction } from "types/VariableDependentTime";
+
+const paramsValues = {
+    name_model: "Model 1",
+    name: "SEIR",
+    compartments: ["S", "E", "I", "R"],
+    t_init: "",
+    t_end: 500,
+    pI_det: 1,
+    beta: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.3,
+            },
+        ],
+        name: "beta",
+        default: 0.3,
+        isEnabled: false,
+        val: 0.3,
+    },
+    mu: 1.5,
+    rR_S: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0,
+            },
+        ],
+        name: "rR_S",
+        default: 0,
+        isEnabled: false,
+        val: 0,
+    },
+    alpha: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 1,
+            },
+        ],
+        name: "alpha",
+        default: 1,
+        isEnabled: false,
+        val: 1,
+    },
+
+    tE_I: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 4,
+            },
+        ],
+        name: "tE_I",
+        default: 5,
+        isEnabled: false,
+        val: 5,
+    },
+    tI_R: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 7,
+            },
+        ],
+        name: "tI_R",
+        default: 7,
+        isEnabled: false,
+        val: 7,
+    },
+    Beta_v: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.15,
+            },
+        ],
+        name: "Beta_v",
+        default: 1,
+        isEnabled: false,
+        val: 0.15,
+    },
+    vac_d: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0,
+            },
+        ],
+        name: "vac_d",
+        default: 0,
+        isEnabled: false,
+        val: 0,
+    },
+    vac_eff: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 1,
+            },
+        ],
+        name: "vac_eff",
+        default: 1,
+        isEnabled: false,
+        val: 1,
+    },
+
+    pE_Im: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.85,
+            },
+        ],
+        name: "pE_Im",
+        default: 0.85,
+        isEnabled: false,
+        val: 0.85,
+    },
+
+    tE_Im: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 3,
+            },
+        ],
+        name: "tE_Im",
+        default: 3,
+        isEnabled: false,
+        val: 3,
+    },
+
+    pE_Icr: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.15,
+            },
+        ],
+        name: "pE_Icr",
+        default: 0.15,
+        isEnabled: false,
+        val: 0.15,
+    },
+    tE_Icr: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 3,
+            },
+        ],
+        name: "tE_Icr",
+        default: 3,
+        isEnabled: false,
+        val: 3,
+    },
+    tEv_Iv: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 3,
+            },
+        ],
+        name: "tEv_Iv",
+        default: 3,
+        isEnabled: false,
+        val: 3,
+    },
+    tIm_R: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 7,
+            },
+        ],
+        name: "tIm_R",
+        default: 7,
+        isEnabled: false,
+        val: 7,
+    },
+    tIcr_H: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 6,
+            },
+        ],
+        name: "tIcr_H",
+        default: 6,
+        isEnabled: false,
+        val: 6,
+    },
+
+    pIv_R: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.99,
+            },
+        ],
+        name: "pIv_R",
+        default: 0.99,
+        isEnabled: false,
+        val: 0.99,
+    },
+
+    tIv_R: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 7,
+            },
+        ],
+        name: "tIv_R",
+        default: 7,
+        isEnabled: false,
+        val: 7,
+    },
+
+    pIv_H: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.01,
+            },
+        ],
+        name: "pIv_H",
+        default: 0.01,
+        isEnabled: false,
+        val: 0.01,
+    },
+
+    tIv_H: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 7,
+            },
+        ],
+        name: "tIv_H",
+        default: 7,
+        isEnabled: false,
+        val: 7,
+    },
+
+    pH_R: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.99,
+            },
+        ],
+        name: "pH_R",
+        default: 0.99,
+        isEnabled: false,
+        val: 0.99,
+    },
+    tH_R: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 9,
+            },
+        ],
+        name: "tH_R",
+        default: 9,
+        isEnabled: false,
+        val: 9,
+    },
+
+    pH_D: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0.01,
+            },
+        ],
+        name: "pH_D",
+        default: 0.01,
+        isEnabled: false,
+        val: 0.01,
+    },
+
+    tH_D: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 9,
+            },
+        ],
+        name: "tH_D",
+        default: 9,
+        isEnabled: false,
+        val: 9,
+    },
+
+    pR_S: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 0,
+            },
+        ],
+        name: "pR_S",
+        default: 0,
+        isEnabled: false,
+        val: 0,
+    },
+
+    tR_S: {
+        rangeDays: [[0, 500]],
+        type: [
+            {
+                name: NameFunction.static,
+                value: 60,
+            },
+        ],
+        name: "tR_S",
+        default: 60,
+        isEnabled: false,
+        val: 60,
+    },
+    population: 100000,
+    populationfraction: 1,
+    pIcr_det: 1,
+    pIm_det: 1,
+    pIv_det: 1,
+};
+
+/**
+ * Returns all the information of each of the nodes that make up the model.
+ * @param {string} name model name.
+ * @param {string} modelValue compartments.
+ * @param {string} startDate model start day.
+ * @param {string[]} nodesValues node name list.
+ * @returns {EpidemicsData}
+ */
+const getArrayParametersByNode = (
+    name,
+    modelValue,
+    startDate,
+    nodesValues
+): EpidemicsData => {
+    return {
+        name_model: name,
+        name: modelValue,
+        compartments: Array.from(modelValue),
+        t_init: `${startDate}`,
+        t_end: 500,
+        pI_det: 1,
+        beta: new Array(nodesValues.length).fill(paramsValues.beta),
+        mu: new Array(nodesValues.length).fill(paramsValues.mu),
+        rR_S: {
+            rangeDays: [[0, 500]],
+            type: [
+                {
+                    name: NameFunction.static,
+                    value: 0,
+                },
+            ],
+            name: "rR_S",
+            default: 0,
+            isEnabled: false,
+            val: 0,
+        },
+        alpha: new Array(nodesValues.length).fill(paramsValues.alpha),
+        tE_I: {
+            rangeDays: [[0, 500]],
+            type: [
+                {
+                    name: NameFunction.static,
+                    value: 4,
+                },
+            ],
+            name: "tE_I",
+            default: 5,
+            isEnabled: false,
+            val: 5,
+        },
+        tI_R: {
+            rangeDays: [[0, 500]],
+            type: [
+                {
+                    name: NameFunction.static,
+                    value: 7,
+                },
+            ],
+            name: "tI_R",
+            default: 7,
+            isEnabled: false,
+            val: 7,
+        },
+        Beta_v: new Array(nodesValues.length).fill(paramsValues.Beta_v),
+        vac_d: new Array(nodesValues.length).fill(paramsValues.vac_d),
+        vac_eff: new Array(nodesValues.length).fill(paramsValues.vac_eff),
+        pE_Im: new Array(nodesValues.length).fill(paramsValues.pE_Im),
+        tE_Im: new Array(nodesValues.length).fill(paramsValues.tE_Im),
+        pE_Icr: new Array(nodesValues.length).fill(paramsValues.pE_Icr),
+        tE_Icr: new Array(nodesValues.length).fill(paramsValues.tE_Icr),
+        tEv_Iv: new Array(nodesValues.length).fill(paramsValues.tEv_Iv),
+        tIm_R: new Array(nodesValues.length).fill(paramsValues.tIm_R),
+        tIcr_H: new Array(nodesValues.length).fill(paramsValues.tIcr_H),
+        pIv_R: new Array(nodesValues.length).fill(paramsValues.pIv_R),
+        tIv_R: new Array(nodesValues.length).fill(paramsValues.tIv_R),
+        pIv_H: new Array(nodesValues.length).fill(paramsValues.pIv_H),
+        tIv_H: new Array(nodesValues.length).fill(paramsValues.tIv_H),
+        pH_R: new Array(nodesValues.length).fill(paramsValues.pH_R),
+        tH_R: new Array(nodesValues.length).fill(paramsValues.tH_R),
+        pH_D: new Array(nodesValues.length).fill(paramsValues.pH_D),
+        tH_D: new Array(nodesValues.length).fill(paramsValues.tH_D),
+        pR_S: new Array(nodesValues.length).fill(paramsValues.pR_S),
+        tR_S: new Array(nodesValues.length).fill(paramsValues.tR_S),
+        population: 100000,
+        populationfraction: 1,
+        pIcr_det: 1,
+        pIm_det: 1,
+        pIv_det: 1,
+    };
+};
+
+/**
+ * It gives all the information to be able to save an adjusted model.
+ * @param {EpidemicsData} originalParamsValue parameter values before being adjusted.
+ * @param {Object} fittedData adjusted parameter values.
+ * @returns {EpidemicsData}
+ */
+export const getParametersFitModel = (
+    originalParamsValue,
+    fittedData
+): EpidemicsData => {
+    const lengthData = Object.keys(fittedData.I).length;
+    const parseParmDays = JSON.parse(fittedData.beta_days);
+    const rangeArray = [0, ...parseParmDays, lengthData];
+
+    let rangeDays = [];
+    for (let i = 0; i &lt; rangeArray.length - 1; i += 1) {
+        rangeDays = [...rangeDays, [rangeArray[i], rangeArray[i + 1]]];
+    }
+
+    const fitBetaValue = {
+        default: originalParamsValue.beta[0].default,
+        isEnabled: true,
+        name: "beta",
+        rangeDays,
+        type: JSON.parse(fittedData.beta).map((val: number) => {
+            return {
+                name: "static",
+                value: val,
+            };
+        }),
+        val: 0.3,
+    };
+
+    return {
+        name_model: originalParamsValue.name,
+        name: originalParamsValue.name,
+        compartments: originalParamsValue.compartments,
+        t_init: originalParamsValue.startDate,
+        t_end: originalParamsValue.t_end,
+        pI_det: originalParamsValue.pI_det,
+        beta: [fitBetaValue],
+        mu: [fittedData.mu],
+        rR_S: originalParamsValue.rR_S,
+        alpha: originalParamsValue.alpha,
+        tE_I: originalParamsValue.tE_I,
+        tI_R: originalParamsValue.tI_R,
+        Beta_v: originalParamsValue.Beta_v,
+        vac_d: originalParamsValue.vac_d,
+        vac_eff: originalParamsValue.vac_eff,
+        pE_Im: originalParamsValue.pE_Im,
+        tE_Im: originalParamsValue.tE_Im,
+        pE_Icr: originalParamsValue.pE_Icr,
+        tE_Icr: originalParamsValue.tE_Icr,
+        tEv_Iv: originalParamsValue.tEv_Iv,
+        tIm_R: originalParamsValue.tIm_R,
+        tIcr_H: originalParamsValue.tIcr_H,
+        pIv_R: originalParamsValue.pIv_R,
+        tIv_R: originalParamsValue.tIv_R,
+        pIv_H: originalParamsValue.pIv_H,
+        tIv_H: originalParamsValue.tIv_H,
+        pH_R: originalParamsValue.pH_R,
+        tH_R: originalParamsValue.tH_R,
+        pH_D: originalParamsValue.pH_D,
+        tH_D: originalParamsValue.tH_D,
+        pR_S: originalParamsValue.pR_S,
+        tR_S: originalParamsValue.tR_S,
+        population: originalParamsValue.population,
+        populationfraction: originalParamsValue.populationfraction,
+        pIcr_det: originalParamsValue.pIcr_det,
+        pIm_det: originalParamsValue.pIm_det,
+        pIv_det: originalParamsValue.pIv_det,
+    };
+};
+
+export default getArrayParametersByNode;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

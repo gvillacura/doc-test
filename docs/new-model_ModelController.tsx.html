@@ -1,0 +1,631 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> new-model/ModelController.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>new-model/ModelController.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable sonarjs/no-identical-functions */
+/* eslint-disable @typescript-eslint/naming-convention */
+import { EditIcon } from "@chakra-ui/icons";
+import {
+    Box,
+    Text,
+    Flex,
+    IconButton,
+    Switch,
+    FormControl,
+    Heading,
+    AccordionItem,
+    AccordionButton,
+    AccordionIcon,
+    AccordionPanel,
+    Select,
+} from "@chakra-ui/react";
+import _ from "lodash";
+import { useContext, useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import NumberInputEpi from "../NumberInputEpi";
+import FunctionIcon from "components/icons/FunctionIcon";
+import NumberInputVariableDependent from "components/NumberInputVariableDependent";
+import { ControlPanel } from "context/ControlPanelContext";
+import { NewModelSetted } from "context/NewModelsContext";
+import { update } from "store/ControlPanel";
+import { RootState } from "store/store";
+import { NewModelsAllParams } from "types/SimulationTypes";
+
+import NodesParams from "./NodesParams";
+
+interface Props {
+    showSectionVariable: (values: boolean) => void;
+    setShowSectionInitialConditions: (value: boolean) => void;
+    setPositionVDT: (value: number) => void;
+    nodes?: string[];
+    modelCompartment?: string;
+}
+
+/**
+ * Accordion with the parameter settings of a model.
+ * @subcategory NewModel
+ * @component
+ */
+const ModelController = ({
+    showSectionVariable,
+    setShowSectionInitialConditions,
+    setPositionVDT,
+    modelCompartment,
+    nodes,
+}: Props) => {
+    const { description, setDataViewVariable, idModelUpdate } =
+        useContext(ControlPanel);
+    const { completeModel } = useContext(NewModelSetted);
+    const parameters = useSelector((state: RootState) => state.controlPanel);
+    const dispatch = useDispatch();
+    const [isEnableIconButton, setIsEnableIconButton] = useState&lt;
+        Record&lt;string, boolean[]>
+    >(
+        [
+            parameters.rR_S,
+            parameters.tE_I,
+            parameters.tI_R,
+            parameters.beta,
+            parameters.alpha,
+            parameters.Beta_v,
+            parameters.vac_d,
+            parameters.vac_eff,
+            parameters.pE_Im,
+            parameters.tE_Im,
+            parameters.pE_Icr,
+            parameters.tE_Icr,
+            parameters.tEv_Iv,
+            parameters.tIm_R,
+            parameters.tIcr_H,
+            parameters.pIv_R,
+            parameters.tIv_R,
+            parameters.pIv_H,
+            parameters.tIv_H,
+            parameters.pH_R,
+            parameters.tH_R,
+            parameters.pH_D,
+            parameters.tH_D,
+            parameters.pR_S,
+            parameters.tR_S,
+        ].reduce((acc, current) => {
+            if (Array.isArray(current)) {
+                return {
+                    ...acc,
+                    [current[0].name]: [
+                        ...current.map((variable) => variable.isEnabled),
+                    ],
+                };
+            }
+            // if (_.isEmpty(current)) {
+            //     return acc;
+            // }
+            return {
+                ...acc,
+                [current.name]: [current.isEnabled],
+            };
+        }, {})
+    );
+
+    useEffect(() => {
+        const paramsModelsToUpdate = completeModel.find(
+            (model: NewModelsAllParams) => model.idNewModel === idModelUpdate
+        );
+        if (paramsModelsToUpdate) {
+            dispatch(
+                update({
+                    type: "update",
+                    updateData: paramsModelsToUpdate.parameters,
+                })
+            );
+            setIsEnableIconButton(
+                [
+                    paramsModelsToUpdate.parameters.rR_S,
+                    paramsModelsToUpdate.parameters.tE_I,
+                    paramsModelsToUpdate.parameters.tI_R,
+                    paramsModelsToUpdate.parameters.beta,
+                    paramsModelsToUpdate.parameters.alpha,
+                    paramsModelsToUpdate.parameters.Beta_v,
+                    paramsModelsToUpdate.parameters.vac_d,
+                    paramsModelsToUpdate.parameters.vac_eff,
+                    paramsModelsToUpdate.parameters.pE_Im,
+                    paramsModelsToUpdate.parameters.tE_Im,
+                    paramsModelsToUpdate.parameters.pE_Icr,
+                    paramsModelsToUpdate.parameters.tE_Icr,
+                    paramsModelsToUpdate.parameters.tEv_Iv,
+                    paramsModelsToUpdate.parameters.tIm_R,
+                    paramsModelsToUpdate.parameters.tIcr_H,
+                    paramsModelsToUpdate.parameters.pIv_R,
+                    paramsModelsToUpdate.parameters.tIv_R,
+                    paramsModelsToUpdate.parameters.pIv_H,
+                    paramsModelsToUpdate.parameters.tIv_H,
+                    paramsModelsToUpdate.parameters.pH_R,
+                    paramsModelsToUpdate.parameters.tH_R,
+                    paramsModelsToUpdate.parameters.pH_D,
+                    paramsModelsToUpdate.parameters.tH_D,
+                    paramsModelsToUpdate.parameters.pR_S,
+                    paramsModelsToUpdate.parameters.tR_S,
+                ].reduce((acc, current) => {
+                    if (Array.isArray(current)) {
+                        return {
+                            ...acc,
+                            [current[0].name]: [
+                                ...current.map(
+                                    (variable) => variable.isEnabled
+                                ),
+                            ],
+                        };
+                    }
+                    // if (_.isEmpty(current)) {
+                    //     return acc;
+                    // }
+                    return {
+                        ...acc,
+                        [current.name]: [current.isEnabled],
+                    };
+                }, {})
+            );
+        }
+    }, [completeModel, dispatch, idModelUpdate]);
+
+    return (
+        &lt;AccordionItem isFocusable>
+            &lt;h2>
+                &lt;AccordionButton
+                    color="#16609E"
+                    border="none"
+                    borderBottom="2px solid #16609E"
+                    _focus={{ boxShadow: "none" }}
+                >
+                    &lt;Box flex="1" textAlign="left">
+                        Parameters
+                    &lt;/Box>
+                    &lt;AccordionIcon />
+                &lt;/AccordionButton>
+            &lt;/h2>
+            &lt;AccordionPanel pb={4} bg="#FFFFFF">
+                &lt;Heading as="h3" fontSize="14px">
+                    Global parameters
+                &lt;/Heading>
+                &lt;Flex justifyContent="space-between" wrap="wrap">
+                    &lt;FormControl display="flex" alignItems="center">
+                        &lt;Flex w="50%" h="2rem" alignItems="center">
+                            &lt;NumberInputEpi
+                                value={parameters.t_end}
+                                nameParams="t_end"
+                                name="Duration"
+                                description="Duration days"
+                                min={0}
+                                step={1}
+                                max={Infinity}
+                                isInitialParameters
+                                type="number"
+                                isStateLocal
+                            />
+                        &lt;/Flex>
+                    &lt;/FormControl>
+                    {/* {nodes.length > 1 &amp;&amp; (
+                        &lt;FormControl display="flex" alignItems="center">
+                        &lt;Text fontSize="14px" fontWeight={500}>
+                            Mobility Matrix
+                        &lt;/Text>
+                            &lt;Flex Flex w="50%" h="2rem" alignItems="center">
+                                &lt;Select
+                                    value="Demo"
+                                    w="13rem"
+                                    fontSize="14px"
+                                    size="sm"
+                                    placeholder="Name Selection"
+                                >
+                                    &lt;option value="Demo">
+                                        Demo Mobility Matrix
+                                    &lt;/option>
+                                &lt;/Select>
+                            &lt;/Flex>
+                        &lt;/FormControl>
+                    )} */}
+                &lt;/Flex>
+                &lt;Flex justifyContent="space-between" wrap="wrap">
+                    {modelCompartment !== "SEIRHVD" &amp;&amp; (
+                        &lt;FormControl display="flex" alignItems="center">
+                            &lt;Flex w="50%" justifyContent="space-between">
+                                &lt;NumberInputVariableDependent
+                                    value={parameters.tI_R.val}
+                                    nameParams="tI_R"
+                                    name={description.tI_R.alias}
+                                    description={description.tI_R.description}
+                                    step={description.tI_R.values.step}
+                                    min={description.tI_R.values.min}
+                                    max={description.tI_R.values.max}
+                                    isDisabled={isEnableIconButton.tI_R[0]}
+                                    duration={parameters.t_end}
+                                    isStateLocal
+                                />
+                            &lt;/Flex>
+                            &lt;Flex
+                                alignItems="center"
+                                w="50%"
+                                justifyContent="flex-end"
+                            >
+                                &lt;Text fontSize="11px">Set function&lt;/Text>
+                                &lt;Switch
+                                    ml="0.5rem"
+                                    isChecked={isEnableIconButton.tI_R[0]}
+                                    onChange={(e) => {
+                                        setIsEnableIconButton({
+                                            ...isEnableIconButton,
+                                            tI_R: [e.target.checked],
+                                        });
+                                        if (!e.target.checked) {
+                                            showSectionVariable(false);
+                                        }
+                                        dispatch(
+                                            update({
+                                                type: "switch",
+                                                target: "tI_R",
+                                                switch: e.target.checked,
+                                            })
+                                        );
+                                    }}
+                                />
+
+                                &lt;IconButton
+                                    fill="white"
+                                    bg="#FFFFFF"
+                                    color="#16609E"
+                                    aria-label="Call Segun"
+                                    size="sm"
+                                    isDisabled={!isEnableIconButton.tI_R[0]}
+                                    cursor="pointer"
+                                    icon={&lt;FunctionIcon />}
+                                    ml="1rem"
+                                    onClick={() => {
+                                        setShowSectionInitialConditions(false);
+                                        showSectionVariable(true);
+                                        setDataViewVariable(parameters.tI_R);
+                                    }}
+                                />
+                            &lt;/Flex>
+                        &lt;/FormControl>
+                    )}
+                &lt;/Flex>
+                &lt;Flex justifyContent="space-between" wrap="wrap">
+                    {modelCompartment === "SEIR" &amp;&amp; (
+                        &lt;FormControl display="flex" alignItems="center">
+                            &lt;Flex w="50%" justifyContent="space-between">
+                                &lt;NumberInputVariableDependent
+                                    value={parameters.tE_I.val}
+                                    nameParams="tE_I"
+                                    name={description.tE_I.alias}
+                                    description={description.tE_I.description}
+                                    step={description.tE_I.values.step}
+                                    min={description.tE_I.values.min}
+                                    max={description.tE_I.values.max}
+                                    isDisabled={isEnableIconButton.tE_I[0]}
+                                    duration={parameters.t_end}
+                                    isStateLocal
+                                />
+                            &lt;/Flex>
+                            &lt;Flex
+                                alignItems="center"
+                                w="50%"
+                                justifyContent="flex-end"
+                            >
+                                &lt;Text fontSize="11px">Set function&lt;/Text>
+                                &lt;Switch
+                                    ml="0.5rem"
+                                    isChecked={isEnableIconButton.tE_I[0]}
+                                    onChange={(e) => {
+                                        setIsEnableIconButton({
+                                            ...isEnableIconButton,
+                                            tE_I: [e.target.checked],
+                                        });
+                                        if (!e.target.checked) {
+                                            showSectionVariable(false);
+                                        }
+                                        dispatch(
+                                            update({
+                                                type: "switch",
+                                                target: "tE_I",
+                                                switch: e.target.checked,
+                                            })
+                                        );
+                                    }}
+                                />
+
+                                &lt;IconButton
+                                    fill="white"
+                                    bg="#FFFFFF"
+                                    color="#16609E"
+                                    aria-label="Call Segun"
+                                    size="sm"
+                                    isDisabled={!isEnableIconButton.tE_I[0]}
+                                    cursor="pointer"
+                                    icon={&lt;FunctionIcon />}
+                                    ml="1rem"
+                                    onClick={() => {
+                                        setShowSectionInitialConditions(false);
+                                        showSectionVariable(true);
+                                        setDataViewVariable(parameters.tE_I);
+                                    }}
+                                />
+                            &lt;/Flex>
+                        &lt;/FormControl>
+                    )}
+                &lt;/Flex>
+                &lt;Flex justifyContent="space-between" wrap="wrap">
+                    {modelCompartment !== "SEIRHVD" &amp;&amp; (
+                        &lt;FormControl display="flex" alignItems="center">
+                            &lt;Flex w="50%" alignItems="center">
+                                &lt;NumberInputVariableDependent
+                                    value={parameters.rR_S.val}
+                                    nameParams="rR_S"
+                                    name={description.rR_S.alias}
+                                    description={description.rR_S.description}
+                                    step={description.rR_S.values.step}
+                                    min={description.rR_S.values.min}
+                                    max={description.rR_S.values.max}
+                                    isDisabled={isEnableIconButton.rR_S[0]}
+                                    duration={parameters.t_end}
+                                    isStateLocal
+                                />
+                            &lt;/Flex>
+                            &lt;Flex
+                                alignItems="center"
+                                w="50%"
+                                justifyContent="flex-end"
+                            >
+                                &lt;Text fontSize="11px">Set function&lt;/Text>
+                                &lt;Switch
+                                    ml="0.5rem"
+                                    isChecked={isEnableIconButton.rR_S[0]}
+                                    onChange={(e) => {
+                                        setIsEnableIconButton({
+                                            ...isEnableIconButton,
+                                            rR_S: [e.target.checked],
+                                        });
+                                        if (!e.target.checked) {
+                                            showSectionVariable(false);
+                                        }
+                                        dispatch(
+                                            update({
+                                                type: "switch",
+                                                target: "rR_S",
+                                                switch: e.target.checked,
+                                            })
+                                        );
+                                    }}
+                                />
+
+                                &lt;IconButton
+                                    fill="white"
+                                    bg="#FFFFFF"
+                                    color="#16609E"
+                                    aria-label="Call Segun"
+                                    size="sm"
+                                    isDisabled={!isEnableIconButton.rR_S[0]}
+                                    cursor="pointer"
+                                    icon={&lt;FunctionIcon />}
+                                    ml="1rem"
+                                    onClick={() => {
+                                        setShowSectionInitialConditions(false);
+                                        showSectionVariable(true);
+                                        setDataViewVariable(parameters.rR_S);
+                                    }}
+                                />
+                            &lt;/Flex>
+                        &lt;/FormControl>
+                    )}
+                &lt;/Flex>
+                &lt;Flex justifyContent="space-between" wrap="wrap">
+                    &lt;FormControl display="flex" alignItems="center">
+                        &lt;Flex w="50%" h="2rem" alignItems="center">
+                            {modelCompartment !== "SEIRHVD" &amp;&amp; (
+                                &lt;NumberInputEpi
+                                    value={parameters.pI_det}
+                                    nameParams="pI_det"
+                                    name={description.pI_det.alias}
+                                    description={description.pI_det.description}
+                                    step={description.pI_det.values.step}
+                                    min={description.pI_det.values.min}
+                                    max={description.pI_det.values.max}
+                                    type="number"
+                                    isInitialParameters
+                                    isStateLocal
+                                />
+                            )}
+                        &lt;/Flex>
+                    &lt;/FormControl>
+                &lt;/Flex>
+                {modelCompartment === "SEIRHVD" &amp;&amp; (
+                    &lt;Flex justifyContent="space-between" wrap="wrap">
+                        &lt;FormControl display="flex" alignItems="center">
+                            &lt;Flex w="50%" h="2rem" alignItems="center">
+                                &lt;NumberInputEpi
+                                    value={parameters.populationfraction}
+                                    nameParams="populationfraction"
+                                    name={description.populationfraction.alias}
+                                    description={
+                                        description.populationfraction
+                                            .description
+                                    }
+                                    step={
+                                        description.populationfraction.values
+                                            .step
+                                    }
+                                    min={
+                                        description.populationfraction.values
+                                            .min
+                                    }
+                                    max={
+                                        description.populationfraction.values
+                                            .max
+                                    }
+                                    type="number"
+                                    isInitialParameters
+                                    isStateLocal
+                                />
+                            &lt;/Flex>
+                        &lt;/FormControl>
+                    &lt;/Flex>
+                )}
+                &lt;Heading as="h3" fontSize="14px">
+                    Parameters per Nodes
+                &lt;/Heading>
+                {/* &lt;Accordion allowToggle reduceMotion> */}
+                &lt;NodesParams
+                    beta={parameters.beta}
+                    alpha={parameters.alpha}
+                    mu={parameters.mu}
+                    nodes={nodes}
+                    duration={parameters.t_end}
+                    setIsEnableIconButton={setIsEnableIconButton}
+                    isEnableIconButton={isEnableIconButton}
+                    showSectionVariable={showSectionVariable}
+                    setShowSectionInitialConditions={
+                        setShowSectionInitialConditions
+                    }
+                    setPositionVDT={setPositionVDT}
+                    modelCompartment={modelCompartment}
+                    otherParameters={{
+                        Beta_v: parameters.Beta_v,
+                        vac_d: parameters.vac_d,
+                        vac_eff: parameters.vac_eff,
+                        pE_Im: parameters.pE_Im,
+                        tE_Im: parameters.tE_Im,
+                        pE_Icr: parameters.pE_Icr,
+                        tE_Icr: parameters.tE_Icr,
+                        tEv_Iv: parameters.tEv_Iv,
+                        tIm_R: parameters.tIm_R,
+                        tIcr_H: parameters.tIcr_H,
+                        pIv_R: parameters.pIv_R,
+                        tIv_R: parameters.tIv_R,
+                        pIv_H: parameters.pIv_H,
+                        tIv_H: parameters.tIv_H,
+                        pH_R: parameters.pH_R,
+                        tH_R: parameters.tH_R,
+                        pH_D: parameters.pH_D,
+                        tH_D: parameters.tH_D,
+                        pR_S: parameters.pR_S,
+                        tR_S: parameters.tR_S,
+                    }}
+                />
+            &lt;/AccordionPanel>
+        &lt;/AccordionItem>
+    );
+};
+
+export default ModelController;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

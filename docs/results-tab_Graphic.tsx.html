@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> results-tab/Graphic.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>results-tab/Graphic.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable sonarjs/no-duplicate-string */
+import { Input } from "@chakra-ui/react";
+import React, { useState, useEffect, useContext } from "react";
+import Plot from "react-plotly.js";
+
+import { GraphicsData } from "context/GraphicsContext";
+import { TabIndex } from "context/TabContext";
+import { DoubleYAxisData } from "types/GraphicsTypes";
+import getNodeName from "utils/getNodeNames";
+
+interface Props {
+    savedSimulationKeys?: DoubleYAxisData[];
+    width: string;
+    height: string;
+    index?: number;
+    disabledName: boolean;
+}
+
+const Graphic = ({
+    savedSimulationKeys,
+    width,
+    height,
+    index,
+    disabledName,
+}: Props) => {
+    const {
+        realDataSimulationKeys,
+        allGraphicData,
+        setAllGraphicData,
+        dataToShowInMap,
+        setAllResults,
+        globalParametersValues,
+    } = useContext(GraphicsData);
+    const [axios, setAxios] = useState([]);
+    const [graphicName, setGraphicName] = useState("");
+    const { aux } = useContext(TabIndex);
+    const data = JSON.parse(aux);
+
+    /**
+     * Create an object ready to send as global data to the Plot.
+     * @param axis axis side.
+     * @param simulationKeys list with parameter values.
+     * @param key key to graph.
+     * @returns {Object}
+     */
+    const getGlobalDataAxis = (globalData, axis, simulationKeys, key) => {
+        if (axis === "rightAxis") {
+            return {
+                x: globalData[0].t,
+                y: simulationKeys,
+                mode: "lines",
+                line: {
+                    dash: "dot",
+                    width: 2,
+                },
+                name: `${key}- Global} &lt;span style="font-weight: bold">Right&lt;/span>`,
+                yaxis: "y2",
+            };
+        }
+        return {
+            x: globalData[0].t,
+            y: simulationKeys,
+            mode: "lines",
+            name: `${key}- Global &lt;span style="font-weight: bold">Left&lt;/span>`,
+        };
+    };
+
+    /**
+     * Create an object ready to send as real data to the Plot.
+     * @param axis axis side.
+     * @param simulationKeys list with parameter values.
+     * @param key key to graph.
+     * @param simRealDataKeyFilter real data results.
+     * @returns {Object}
+     */
+    const getRealDataAxis = (
+        axis,
+        simulationKeys,
+        key,
+        simRealDataKeyFilter,
+        isMono,
+        isGlobal
+    ) => {
+        const name = isGlobal
+            ? `${key}- Global`
+            : `${key}-${getNodeName(simRealDataKeyFilter[0].name, isMono)}`;
+        if (axis === "rightAxis") {
+            return {
+                x: Object.keys(simulationKeys),
+                y: Object.values(simulationKeys),
+                mode: "lines+markers",
+                line: {
+                    dash: "dot",
+                    width: 2,
+                },
+                name: `${name} &lt;span style="font-weight: bold">Right&lt;/span>`,
+                yaxis: "y2",
+            };
+        }
+        return {
+            x: Object.keys(simulationKeys),
+            y: Object.values(simulationKeys),
+            mode: "lines+markers",
+            name: `${name} &lt;span style="font-weight: bold">Left&lt;/span>`,
+        };
+    };
+
+    const getRealAndGlobalData = (
+        key,
+        simKey,
+        axis,
+        simRealDataKeyFilter,
+        isMono
+    ) => {
+        // To find the data according to the saved key.
+        let filterKey = key.slice(0, -5);
+        if (simKey.name === "Global") {
+            if (filterKey === "population") {
+                filterKey = "P";
+            }
+            // Filters the real data and returns the values according to the selected parameter.
+            const generalModalValue = realDataSimulationKeys.filter(
+                (nodeData) => {
+                    return nodeData.name === "global_results";
+                }
+            );
+            const getGeneralRealModalValue = generalModalValue[0][filterKey];
+
+            return getRealDataAxis(
+                axis,
+                getGeneralRealModalValue,
+                key,
+                generalModalValue,
+                isMono,
+                true
+            );
+        }
+        const simulationKeys = simRealDataKeyFilter[0][filterKey];
+        return getRealDataAxis(
+            axis,
+            simulationKeys,
+            key,
+            simRealDataKeyFilter,
+            isMono,
+            false
+        );
+    };
+
+    /**
+     * Create an object ready to send as data to the Plot.
+     * @param {Array} axisKeys List with objects composed by simulation name and parameters chosen to graph.
+     * @returns {Object}
+     */
+    const graphSimulation = (axisKeys, axis) => {
+        const isMono = globalParametersValues === "";
+        return axisKeys.map((simKey) => {
+            // To get all the data of a simulation.
+            const simKeyFilter = data.filter((sim) => {
+                return sim.name === simKey.name;
+            });
+            // To get all the real data of a simulation.
+            const simRealDataKeyFilter = realDataSimulationKeys.filter(
+                (sim) => {
+                    return sim.name === simKey.name;
+                }
+            );
+            // To get the selected keys from the simulation.
+            const savedKeys = simKey.keys;
+            return savedKeys.map((key) => {
+                if (key.includes("Real")) {
+                    return getRealAndGlobalData(
+                        key,
+                        simKey,
+                        axis,
+                        simRealDataKeyFilter,
+                        isMono
+                    );
+                }
+                if (simKey.name === "Global") {
+                    const globalData = JSON.parse(globalParametersValues);
+                    const simulationKeys = globalData[0][key];
+                    return getGlobalDataAxis(
+                        globalData,
+                        axis,
+                        simulationKeys,
+                        key
+                    );
+                }
+                const simulationKeys = simKeyFilter[0][key];
+                if (axis === "rightAxis") {
+                    return {
+                        x: Object.keys(simulationKeys),
+                        y: Object.values(simulationKeys),
+                        mode: "lines",
+                        line: {
+                            dash: "dot",
+                            width: 3,
+                        },
+                        name: `${key}-${getNodeName(
+                            simKeyFilter[0].name,
+                            isMono
+                        )} &lt;span style="font-weight: bold">Right&lt;/span>`,
+                        yaxis: "y2",
+                    };
+                }
+                return {
+                    x: Object.keys(simulationKeys),
+                    y: Object.values(simulationKeys),
+                    mode: "lines",
+                    name: `${key}-${getNodeName(
+                        simKeyFilter[0].name,
+                        isMono
+                    )} &lt;span style="font-weight: bold">Left&lt;/span>`,
+                };
+            });
+        });
+    };
+
+    useEffect(() => {
+        const leftAxisKeys = savedSimulationKeys[0].leftAxis;
+        const rightAxisKeys = savedSimulationKeys[0].rightAxis;
+        const axiosLeftData = graphSimulation(leftAxisKeys, "leftAxis");
+        const axiosRightData = graphSimulation(rightAxisKeys, "rightAxis");
+        let leftDataToGraph = [];
+        let rightDataToGraph = [];
+        axiosLeftData.forEach((simulation) => {
+            simulation.forEach((parameter) => {
+                leftDataToGraph = [...leftDataToGraph, parameter];
+                return leftDataToGraph;
+            });
+        });
+        axiosRightData.forEach((simulation) => {
+            simulation.forEach((parameter) => {
+                rightDataToGraph = [...rightDataToGraph, parameter];
+                return rightDataToGraph;
+            });
+        });
+
+        const allDataToGraph = leftDataToGraph.concat(rightDataToGraph);
+
+        setAxios(allDataToGraph);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [savedSimulationKeys, allGraphicData]);
+
+    /**
+     * Save the new chart name.
+     * @param {string} name
+     */
+    const setNewGraphicName = (name) => {
+        const allDataAux = allGraphicData;
+        const auxAllGraphicData = allDataAux[index];
+        auxAllGraphicData[0].graphicName = name;
+        setAllGraphicData([...allDataAux]);
+        setAllResults([].concat(dataToShowInMap, allDataAux));
+    };
+
+    useEffect(() => {
+        if (savedSimulationKeys[0].graphicName === "") {
+            setGraphicName(`Graphic ${index + 1}`);
+            setNewGraphicName(`Graphic ${index + 1}`);
+        } else {
+            setGraphicName(savedSimulationKeys[0].graphicName);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [allGraphicData]);
+
+    return (
+        &lt;>
+            {disabledName ? (
+                &lt;Input
+                    border="none"
+                    bg="#FFFFFF"
+                    textAlign="center"
+                    fontSize="20px"
+                    w="60%"
+                    value={graphicName}
+                    isDisabled
+                />
+            ) : (
+                &lt;Input
+                    border="none"
+                    bg="#FFFFFF"
+                    textAlign="center"
+                    fontSize="20px"
+                    value={graphicName}
+                    focusBorderColor="none"
+                    onChange={(e) => {
+                        setGraphicName(e.target.value);
+                    }}
+                    onBlur={() => {
+                        setNewGraphicName(graphicName);
+                    }}
+                />
+            )}
+            &lt;Plot
+                data={axios}
+                layout={{
+                    autosize: false,
+                    width: +width,
+                    height: +height * 0.9,
+                    margin: {
+                        l: 55,
+                        b: 60,
+                        t: 0,
+                    },
+                    color: "blue",
+                    title: `&lt;span style="display: none">""&lt;/span>`,
+                    legend: { xanchor: "end", x: 1.1, y: 1.1, yanchor: "top" },
+                    showlegend: true,
+                    xaxis: {
+                        title: {
+                            text: "Time",
+                        },
+                        autorange: true,
+                    },
+                    yaxis: {
+                        title: {
+                            text: "Population",
+                        },
+                        autorange: true,
+                    },
+                    yaxis2: {
+                        title: "Population",
+                        titlefont: { color: "#5991c1" },
+                        tickfont: { color: "#5991c1" },
+                        overlaying: "y",
+                        side: "right",
+                    },
+                }}
+                config={{
+                    editable: false,
+                    responsive: true,
+                }}
+            />
+        &lt;/>
+    );
+};
+
+export default Graphic;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

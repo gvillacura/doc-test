@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> summary-tab/getSIRObjMono.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>summary-tab/getSIRObjMono.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable @typescript-eslint/dot-notation */
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable complexity */
+
+import VariableDependentTime, {
+    NameFunction,
+    Sine,
+    Square,
+    StaticValue,
+    Transition,
+} from "types/VariableDependentTime";
+
+const createObjectVariableDependent = (params: VariableDependentTime) => {
+    const variableDependent = {
+        function: "events",
+        values: [],
+        days: [],
+        default: params.default,
+    };
+    params.type.forEach((p: Sine | Square | Transition | StaticValue, i) => {
+        variableDependent.days.push(params.rangeDays[i]);
+        switch (p.name) {
+            case NameFunction.sinusoidal:
+                variableDependent.values.push({
+                    function: "sine",
+                    min_val: p["min"],
+                    max_val: p["max"],
+                    period: p["period"],
+                    initphase: p["initPhase"],
+                });
+                break;
+            case NameFunction.square:
+                variableDependent.values.push({
+                    function: "square",
+                    min_val: p["min"],
+                    max_val: p["max"],
+                    period: p["period"],
+                    initphase: p["initPhase"],
+                    duty: p["duty"],
+                    t_init: params.rangeDays[i][0],
+                    t_end: params.rangeDays[i][1],
+                });
+                break;
+            default:
+                variableDependent.values.push(p["value"]);
+                break;
+        }
+    });
+    return variableDependent;
+};
+
+/**
+ * Provides data for SIR type models.
+ * @param {NewModelsAllParams[]} e
+ * @param {EpidemicsData} modelParameters
+ * @param scale geographic scale of the model.
+ * @param featureSelected fips of geographic areas selected in the model.
+ * @returns {Object}
+ */
+const getSIRObjMono = (e, modelParameters, scale, featureSelected) => {
+    return {
+        idSim: e.idNewModel,
+        model: {
+            model: modelParameters.name,
+            name: modelParameters.name,
+            compartments: modelParameters.compartments,
+        },
+        data: {
+            datafile: false,
+            importdata: false,
+            initdate: "2020-03-22",
+            country: "USA",
+            state: scale === "States" ? featureSelected : "",
+            county: scale === "Counties" ? featureSelected : "",
+            healthservice: "",
+            loc_name: "",
+        },
+        parameters: {
+            static: {
+                t_init: 0,
+                t_end: +modelParameters.t_end,
+                mu: +modelParameters.mu[0],
+                pI_det: +modelParameters.pI_det,
+            },
+            dynamic: {
+                beta: !modelParameters.beta[0].isEnabled
+                    ? +modelParameters.beta[0].val
+                    : createObjectVariableDependent(modelParameters.beta[0]),
+                alpha: !modelParameters.alpha[0].isEnabled
+                    ? +modelParameters.alpha[0].val
+                    : createObjectVariableDependent(modelParameters.alpha[0]),
+                tE_I: !modelParameters.tE_I.isEnabled
+                    ? +modelParameters.tE_I.val
+                    : createObjectVariableDependent(modelParameters.tE_I),
+                tI_R: !modelParameters.tI_R.isEnabled
+                    ? +modelParameters.tI_R.val
+                    : createObjectVariableDependent(modelParameters.tI_R),
+                rR_S: !modelParameters.rR_S.isEnabled
+                    ? +modelParameters.rR_S.val
+                    : createObjectVariableDependent(modelParameters.rR_S),
+            },
+        },
+        initialconditions: {
+            I: +e.initialConditions[0].conditionsValues.I,
+            I_d: +e.initialConditions[0].conditionsValues.I_d,
+            I_ac: +e.initialConditions[0].conditionsValues.I_ac,
+            population: +e.initialConditions[0].conditionsValues.population,
+            R: +e.initialConditions[0].conditionsValues.R,
+        },
+    };
+};
+
+export default getSIRObjMono;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

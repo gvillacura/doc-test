@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> results-tab/metapopulation-map/MetaMapResults.tsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components / Results</h3><ul><li><a href="BarGraphModal.html">BarGraphModal</a></li><li><a href="ColorsScale.html">ColorsScale</a></li><li><a href="DoubleYAxis.html">DoubleYAxis</a></li><li><a href="GraphAndMapMetaModal.html">GraphAndMapMetaModal</a></li><li><a href="GraphAndMapMonoModal.html">GraphAndMapMonoModal</a></li><li><a href="GraphicAndMapResults.html">GraphicAndMapResults</a></li><li><a href="GraphModal.html">GraphModal</a></li><li><a href="MapResults.html">MapResults</a></li><li><a href="MetaMapResults.html">MetaMapResults</a></li><li><a href="MetapopulationSelectTable.html">MetapopulationSelectTable</a></li><li><a href="PlayDataSlider.html">PlayDataSlider</a></li><li><a href="RealDataCheckBoxs.html">RealDataCheckBoxs</a></li><li><a href="ResultsDrawer.html">ResultsDrawer</a></li><li><a href="ResultsMapsSelection.html">ResultsMapsSelection</a></li><li><a href="ResultsSelection.html">ResultsSelection</a></li></ul><h3>Components</h3><ul><li><a href="CountiesSelect.html">CountiesSelect</a></li><li><a href="GeoSelectionsTab.html">GeoSelectionsTab</a></li><li><a href="NumberInputEpi.html">NumberInputEpi</a></li><li><a href="NumberInputVariableDependent.html">NumberInputVariableDependent</a></li><li><a href="ResetAlerts.html">ResetAlerts</a></li><li><a href="SelectedFeaturesPanel.html">SelectedFeaturesPanel</a></li><li><a href="StatesSelect.html">StatesSelect</a></li><li><a href="StatesSelectedCheckbox.html">StatesSelectedCheckbox</a></li></ul><h3>Components / DataFitTab</h3><ul><li><a href="EndPointSource.html">EndPointSource</a></li><li><a href="FileSource.html">FileSource</a></li><li><a href="FitParameterTable.html">FitParameterTable</a></li><li><a href="FitParemetersTabs.html">FitParemetersTabs</a></li><li><a href="GraphicDataFit.html">GraphicDataFit</a></li><li><a href="MetapopulationDataFit.html">MetapopulationDataFit</a></li><li><a href="MonopopulationDataFit.html">MonopopulationDataFit</a></li><li><a href="NodeSearchFilter.html">NodeSearchFilter</a></li><li><a href="SampleSource.html">SampleSource</a></li></ul><h3>Components / models-tab</h3><ul><li><a href="ExportModels.html">ExportModels</a></li><li><a href="ImportModels.html">ImportModels</a></li></ul><h3>Components / MapTab</h3><ul><li><a href="GeoSelectionsDetails.html">GeoSelectionsDetails</a></li><li><a href="GeoToastMessage.html">GeoToastMessage</a></li><li><a href="SelectorMap.html">SelectorMap</a></li><li><a href="SelectorMapAccordion.html">SelectorMapAccordion</a></li></ul><h3>Components / NewModel</h3><ul><li><a href="InitialConditiosModels.html">InitialConditiosModels</a></li><li><a href="ModelAccordion.html">ModelAccordion</a></li><li><a href="ModelBuilder.html">ModelBuilder</a></li><li><a href="ModelController.html">ModelController</a></li><li><a href="ModelMainTab.html">ModelMainTab</a></li><li><a href="SelectDate.html">SelectDate</a></li></ul><h3>Components / Summary tab</h3><ul><li><a href="RunButton.html">RunButton</a></li><li><a href="TableSimulations.html">TableSimulations</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getArrayParametersByNode">getArrayParametersByNode</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getGeoNames">getGeoNames</a></li><li><a href="global.html#getInitialConditionsByModel">getInitialConditionsByModel</a></li><li><a href="global.html#getMetaObj">getMetaObj</a></li><li><a href="global.html#getParametersFitModel">getParametersFitModel</a></li><li><a href="global.html#getPreviusInitialConditions">getPreviusInitialConditions</a></li><li><a href="global.html#getSEIRHVDObjMono">getSEIRHVDObjMono</a></li><li><a href="global.html#getSEIRObjMono">getSEIRObjMono</a></li><li><a href="global.html#getSIRObjMono">getSIRObjMono</a></li><li><a href="global.html#postInitialConditionsByModel">postInitialConditionsByModel</a></li></ul></div><div class="category"><h2>DataFitTab</h2><h3>Components</h3><ul><li><a href="DataFitTab.html">DataFitTab</a></li></ul></div><div class="category"><h2>MapTab</h2><h3>Components</h3><ul><li><a href="Map.html">Map</a></li></ul></div><div class="category"><h2>NewModel</h2><h3>Components</h3><ul><li><a href="NewModel.html">NewModel</a></li></ul></div><div class="category"><h2>Results</h2><h3>Components</h3><ul><li><a href="Results.html">Results</a></li></ul></div><div class="category"><h2>Summary tab</h2><h3>Components</h3><ul><li><a href="SummaryTab.html">SummaryTab</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>results-tab/metapopulation-map/MetaMapResults.tsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { DeleteIcon } from "@chakra-ui/icons";
+import {
+    Flex,
+    Text,
+    Slider,
+    SliderTrack,
+    SliderFilledTrack,
+    SliderThumb,
+    IconButton,
+    Stat,
+    StatLabel,
+    StatNumber,
+    StatGroup,
+} from "@chakra-ui/react";
+import { format, add } from "date-fns";
+import dynamic from "next/dynamic";
+import React, { useContext, useEffect, useState } from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
+
+import ColorScaleMenu from "../ColorScaleMenu";
+import ColorsScale from "../ColorsScale";
+import GraphAndMapMetaModal from "../graphic-map-modal/GraphAndMapMetaModal";
+import PlayDataSlider from "../PlayDataSlider";
+import { GraphicsData } from "context/GraphicsContext";
+import { TabIndex } from "context/TabContext";
+import { MapResultsData } from "types/GraphicsTypes";
+
+import CountiesMetaResultsMap from "./CountiesMetaResultsMap";
+import StatesMetaResultsMap from "./StatesMetaResultsMap";
+
+interface Props {
+    map: MapResultsData;
+    sizeGraphic: number[];
+}
+
+/**
+ * Container the visualization of the result in a map of a metapopulation simulation.
+ * @subcategory Results
+ * @component
+ */
+const MetaMapResults = ({ map, sizeGraphic }: Props) => {
+    const [simMetaDay, setSimMetaDay] = useState(0);
+    const [simMetaDate, setSimMetaDate] = useState("");
+    const [parameterMetaValue, setParameterMetaValue] = useState([]);
+    const [maxMetaValue, setMaxMetaValue] = useState();
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [colorScale, setColorScale] = useState("GnBu");
+    const [globalMetaValue, setGlobalMetaValue] = useState();
+    const [globalMetaRealValue, setGlobalMetaRealValue] = useState();
+    const { aux } = useContext(TabIndex);
+    const data = JSON.parse(aux);
+    const {
+        realDataSimulationKeys,
+        dataToShowInMap,
+        setDataToShowInMap,
+        setAllResults,
+        allGraphicData,
+        globalParametersValues,
+    } = useContext(GraphicsData);
+    const globalData = JSON.parse(globalParametersValues);
+
+    useEffect(() => {
+        setSimMetaDay(0);
+    }, [map]);
+
+    /**
+     * Saves in the "parameterMetaValue" state the values of a parameter according to the simulation day.
+     * @param  {Array} simData list of real or simulated metapopulation data.
+     * @param {string}  typeData type of data to filter: real or simulated.
+     */
+    const filterMetaData = (simData, typeData) => {
+        let getParameterValue;
+        let getGeneralParameterValue;
+
+        if (typeData === "Real") {
+            let filterKey = map.parameter.slice(0, -5);
+            if (filterKey === "population") {
+                filterKey = "P";
+            }
+            getParameterValue = simData.map((nodeData) => {
+                return Object.values(nodeData[filterKey]);
+            });
+            const generalValue = simData.filter((nodeData) => {
+                return nodeData.name === "global_results";
+            });
+            const getGeneralRealValue = generalValue[0][filterKey];
+            setGlobalMetaRealValue(getGeneralRealValue[simMetaDay]);
+        } else {
+            let filterSimKey = map.parameter;
+            if (filterSimKey === "population") {
+                filterSimKey = "S";
+            }
+            getParameterValue = simData.map((nodeData) => {
+                return nodeData[filterSimKey];
+            });
+            getGeneralParameterValue = globalData[0][filterSimKey];
+            if (getGeneralParameterValue !== undefined) {
+                setGlobalMetaValue(getGeneralParameterValue[simMetaDay]);
+            }
+        }
+        const maxValues = getParameterValue.map((valArray) => {
+            return Math.max.apply(null, valArray);
+        });
+        const getMaxValue = Math.max.apply(null, maxValues);
+        setMaxMetaValue(getMaxValue);
+        if (getParameterValue !== undefined) {
+            const parameterValuesList = getParameterValue.map((val) => {
+                return val[simMetaDay];
+            });
+            setParameterMetaValue(parameterValuesList);
+        }
+    };
+
+    useEffect(() => {
+        if (map.parameter.includes("Real")) {
+            filterMetaData(realDataSimulationKeys, "Real");
+        } else {
+            filterMetaData(data, "Sim");
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [map.nameSim, map.parameter, simMetaDay]);
+
+    useEffect(() => {
+        const durationValue = map.duration.toString();
+        if (isPlaying &amp;&amp; simMetaDay &lt; parseInt(durationValue, 10) - 1) {
+            setTimeout(() => {
+                const simMetaDayAux = simMetaDay;
+                setSimMetaDay(simMetaDayAux + 1);
+            }, 100);
+        }
+        if (simMetaDay === parseInt(durationValue, 10) - 1) {
+            setIsPlaying(false);
+        }
+    }, [simMetaDay, isPlaying, map.duration]);
+
+    useEffect(() => {
+        setSimMetaDate(format(new Date(map.date), "dd/MM/yyyy"));
+        const newDate = add(new Date(map.date), {
+            days: simMetaDay,
+        });
+        setSimMetaDate(format(newDate, "dd/MM/yyyy"));
+    }, [map.date, simMetaDay]);
+
+    return (
+        &lt;Flex direction="column" w="48%" mb="2rem">
+            &lt;Flex justify="end" alignSelf="end" mr="0.2rem" w="10%" mt="2%">
+                &lt;Flex h="1.5rem">
+                    &lt;GraphAndMapMetaModal
+                        mapInfo={map}
+                        colorScale={colorScale}
+                    />
+                    &lt;ColorScaleMenu setColorScale={setColorScale} />
+                    &lt;DeleteIcon
+                        color="#16609E"
+                        cursor="pointer"
+                        onClick={() => {
+                            const dataToShowInMapFilter =
+                                dataToShowInMap.filter((mapData) => {
+                                    return mapData.idMap !== map.idMap;
+                                });
+                            setDataToShowInMap(dataToShowInMapFilter);
+
+                            Promise.resolve(setAllResults([])).then(() => {
+                                setAllResults(
+                                    [].concat(
+                                        dataToShowInMapFilter,
+                                        allGraphicData
+                                    )
+                                );
+                            });
+                        }}
+                    >
+                        Delete
+                    &lt;/DeleteIcon>
+                &lt;/Flex>
+            &lt;/Flex>
+            &lt;Flex
+                direction="column"
+                justify="center"
+                bg="#FFFFFF"
+                borderRadius="10px"
+                alignItems="center"
+                w="100%"
+                h="70vh"
+            >
+                &lt;Flex justify="center" direction="column" w="90%">
+                    &lt;Text ml="2%">
+                        {map.parameter} {map.nameSim}
+                    &lt;/Text>
+                    &lt;MapContainer
+                        className="will-change"
+                        center={[38, -96]}
+                        zoom={3.48}
+                        style={{
+                            height: "45vh",
+                            maxHeight: "45vh",
+                            width: "100%",
+                        }}
+                        scrollWheelZoom={false}
+                    >
+                        &lt;ColorsScale
+                            maxValue={maxMetaValue}
+                            colorScale={colorScale}
+                        />
+                        &lt;TileLayer
+                            attribution='&amp;copy; &lt;a href="http://osm.org/copyright">OpenStreetMap&lt;/a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        {map.scale === "States" ? (
+                            &lt;StatesMetaResultsMap
+                                idGeo={map.idGeo}
+                                parameterValue={parameterMetaValue}
+                                maxValue={maxMetaValue}
+                                statesData={map.geoDataSelected}
+                                colorScale={colorScale}
+                            />
+                        ) : (
+                            &lt;CountiesMetaResultsMap
+                                idGeo={map.idGeo}
+                                parameterValue={parameterMetaValue}
+                                maxValue={maxMetaValue}
+                                countiesData={map.geoDataSelected}
+                                colorScale={colorScale}
+                            />
+                        )}
+                    &lt;/MapContainer>
+                &lt;/Flex>
+                &lt;StatGroup w="90%" mt="1%">
+                    &lt;Stat>
+                        &lt;StatLabel>Day&lt;/StatLabel>
+                        &lt;StatNumber>{simMetaDay + 1}&lt;/StatNumber>
+                    &lt;/Stat>
+
+                    &lt;Stat>
+                        &lt;StatLabel>Date&lt;/StatLabel>
+                        &lt;StatNumber>{simMetaDate}&lt;/StatNumber>
+                    &lt;/Stat>
+                    &lt;Stat>
+                        &lt;StatLabel>{map.parameter} Global Value&lt;/StatLabel>
+                        {map.parameter.includes("Real") ? (
+                            &lt;StatNumber>
+                                {new Intl.NumberFormat("de-DE").format(
+                                    globalMetaRealValue
+                                )}
+                            &lt;/StatNumber>
+                        ) : (
+                            &lt;StatNumber>
+                                {new Intl.NumberFormat("de-DE").format(
+                                    globalMetaValue
+                                )}
+                            &lt;/StatNumber>
+                        )}
+                    &lt;/Stat>
+                &lt;/StatGroup>
+
+                &lt;PlayDataSlider
+                    map={map}
+                    isPlaying={isPlaying}
+                    setIsPlaying={setIsPlaying}
+                    simDay={simMetaDay}
+                    setSimDay={setSimMetaDay}
+                    population="metapopulation"
+                />
+            &lt;/Flex>
+        &lt;/Flex>
+    );
+};
+
+export default MetaMapResults;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>
