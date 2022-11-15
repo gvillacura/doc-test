@@ -11,3 +11,8 @@ Contents
    usage
    api
    create-model
+   geo-selection
+   mobility-matrix
+   data-fit
+   summary-selections
+   results
