@@ -1,17 +1,7 @@
-Welcome to Lumache's documentation!
+Welcome to EPIc SUITE documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
+The **EPIc Suite** is a web-based platform designed as an enabling tool for epidemiological modeling and simulation. The suite allows the creation of pipelines for scientific research on epidemics, offering capabilities for working with data, embedding it in models, running simulations and performing analysis and projections. It is designed with a mix of simplicity of use, offering a variety of tools, such as data extraction, data fitting heuristics, dynamic parameters for modeling tendency changes like non-pharmaceutical interventions or new variant appearance, integrated function builder, integrated parameter sensitivity analysis, among others.
 
 Contents
 --------
@@ -20,3 +10,4 @@ Contents
 
    usage
    api
+   create-model
